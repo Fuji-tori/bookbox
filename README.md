@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|nickname|string|null: false|
+|email|string|null: false, unique: true|
+|password|string|null: false|
 
-Things you may want to cover:
+### Association
+- has_many :items
 
-* Ruby version
+## booksテーブル
+|Column|Type|Options|
+|------|----|-------|
+|bookname|string|null: false|
+|genre|string|null: false|
+|author|string|null: false|
+|text|string|null: false|
+|image|text|null: false|
+|review|text|null: false|
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Association
+- belongs_to :user
