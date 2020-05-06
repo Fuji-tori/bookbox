@@ -17,17 +17,17 @@
 |Column|Type|Options|
 |------|----|-------|
 |bookname|string|null: false|
-|genre|string|null: false|
 |author|string|null: false|
 |text|string|null: false|
 |image|text|null: false|
 |review|text|null: false|
+|genre|string|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
 - has_many :comments
 - has_many :bookmarks
-
+- belongs_to :book_genre
 
 ## book_genresテーブル
 
