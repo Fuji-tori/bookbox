@@ -1,24 +1,65 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|nickname|string|null: false|
+|email|string|null: false, unique: true|
+|password|string|null: false|
 
-Things you may want to cover:
+### Association
+- has_many :books
+- has_many :comments
+- has_many :bookmarks
 
-* Ruby version
 
-* System dependencies
+## booksテーブル
+|Column|Type|Options|
+|------|----|-------|
+|bookname|string|null: false|
+|author|string|null: false|
+|text|string|null: false|
+|image|text|null: false|
+|review|text|null: false|
+|genre|string|null: false, foreign_key: true|
 
-* Configuration
+### Association
+- belongs_to :user
+- has_many :comments
+- has_many :bookmarks
+- belongs_to :book_genre
 
-* Database creation
+## book_genresテーブル
 
-* Database initialization
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false, index: true|
+|book|references|foreign_key: true|
+|ancestry|string|
 
-* How to run the test suite
+### Association
 
-* Services (job queues, cache servers, search engines, etc.)
+- has_many :books
 
-* Deployment instructions
 
-* ...
+## bookmarksテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user|references|foreign_key: true, null: false|
+|book|references|foreign_key: true, null: false|
+
+### Association
+- belongs_to :user
+- belongs_to :book
+
+
+## commentsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user|references|foreign_key: true, null: false|
+|book|references|foreign_key: true, null: false|
+|text|text|null: false|
+
+### Association
+- belongs_to :user
+- belongs_to :book
