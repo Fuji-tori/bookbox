@@ -1,0 +1,24 @@
+.body
+  .header
+    .header__inner
+      .main-header
+        %h1.icon 
+          = link_to "#" do
+        .search-box
+          .form
+            %input{type: "text",class: "search-box__text", placeholder: "キーワードから探す"}
+            %button{type: "submit",class: "submit-btn", value: "Send"}
+              .search-button
+
+      .nav
+        %ul.list-left 
+          %li.list-left__first 
+            = link_to "#" do
+              カテゴリー
+        %ul.list-right
+          %li.list-right__login
+            = link_to "#" do
+              ログアウト
+          %li.list-right__new
+            = link_to "#" do
+              マイページ
