@@ -3,6 +3,7 @@ class CreateBooks < ActiveRecord::Migration[5.2]
     create_table :books do |t|
       t.string :bookname, null: false
       t.string :author, null: false
+      t.string :publication, null: false
       t.integer :price, null: false
       t.string :text, null: false
       t.text :image, null: false
