@@ -22,3 +22,16 @@
           %li.list-right__new
             = link_to "#" do
               マイページ
+        -# %ul.list-right
+        -#   - if (user_signed_in?)
+        -#     %li.list-right__logout
+        -#       = link_to "ログアウト", destroy_user_session_path, method: :delete
+        -#     %li.list-right__mypage
+        -#       = link_to "マイページ", users_show_path(current_user.id)
+        -#   - else
+        -#     %li.list-right__login
+        -#       = link_to new_user_session_path do
+        -#         ログイン
+        -#     %li.list-right__new
+        -#       = link_to new_user_registration_path do
+        -#         新規会員登録
