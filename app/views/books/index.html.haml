@@ -17,11 +17,11 @@
               ジャンル
         %ul.list-right
           %li.list-right__login
-            = link_to "#" do
-              ログアウト
+            = link_to new_user_session_path do
+              ログイン
           %li.list-right__new
-            = link_to "#" do
-              マイページ
+            = link_to new_user_registration_path do
+              新規会員登録
         -# %ul.list-right
         -#   - if (user_signed_in?)
         -#     %li.list-right__logout
