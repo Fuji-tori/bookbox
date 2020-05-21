@@ -7,11 +7,35 @@
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-  %body
-    %header.header
-      .header__title
-        = link_to "Book box", '#', class: "header__title--text"
-      .header__right
-        = link_to "新規投稿", '#', class: "header__right--btn"
+  .body
+    .header
+      .header__inner
+        .main-header
+          %h1.icon 
+            = link_to "#" do
+          .search-box
+            .form
+              %input{type: "text",class: "search-box__text", placeholder: "キーワードから探す"}
+              %button{type: "submit",class: "submit-btn", value: "Send"}
+                .search-button
+
+        .nav
+          %ul.list-left 
+            %li.list-left__first 
+              = link_to "#" do
+                ジャンル
+          %ul.list-right
+            - if (user_signed_in?)
+              %li.list-right__logout
+                = link_to "ログアウト", destroy_user_session_path, method: :delete
+              %li.list-right__mypage
+                = link_to "マイページ", users_show_path(current_user.id)
+            - else
+              %li.list-right__login
+                = link_to new_user_session_path do
+                  ログイン
+              %li.list-right__new
+                = link_to new_user_registration_path do
+                  新規会員登録
     .contents
       = yield
