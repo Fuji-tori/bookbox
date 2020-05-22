@@ -5,6 +5,8 @@ ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.2'
+# Use mysql as the database for Active Record
+gem 'mysql2', '>= 0.4.4', '< 0.6.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
@@ -63,3 +65,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'haml-rails'
 gem 'font-awesome-rails'
+gem 'devise'
+gem 'pry-rails'
+gem 'compass-rails', '3.1.0'
+gem 'sprockets', '3.7.2'

@@ -1,37 +1,6 @@
-.body
-  .header
-    .header__inner
-      .main-header
-        %h1.icon 
-          = link_to "#" do
-        .search-box
-          .form
-            %input{type: "text",class: "search-box__text", placeholder: "キーワードから探す"}
-            %button{type: "submit",class: "submit-btn", value: "Send"}
-              .search-button
-
-      .nav
-        %ul.list-left 
-          %li.list-left__first 
-            = link_to "#" do
-              ジャンル
-        %ul.list-right
-          %li.list-right__login
-            = link_to "#" do
-              ログアウト
-          %li.list-right__new
-            = link_to "#" do
-              マイページ
-        -# %ul.list-right
-        -#   - if (user_signed_in?)
-        -#     %li.list-right__logout
-        -#       = link_to "ログアウト", destroy_user_session_path, method: :delete
-        -#     %li.list-right__mypage
-        -#       = link_to "マイページ", users_show_path(current_user.id)
-        -#   - else
-        -#     %li.list-right__login
-        -#       = link_to new_user_session_path do
-        -#         ログイン
-        -#     %li.list-right__new
-        -#       = link_to new_user_registration_path do
-        -#         新規会員登録
+.contents.row
+  - @books.each do |book|
+    .content_post{:style => "background-image: url(#{book.image});"}
+      = simple_format(book.text)
+      %span.name
+        = book.name
