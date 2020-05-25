@@ -1,5 +1,5 @@
-.contents.row
-  .container
+.book-new__contents
+  .book_form
     = form_for @book do |f|
       .book-new_label
         %h3
@@ -12,14 +12,14 @@
               必須
           %br/
           = f.text_field :bookname
-        .book-author__from
+        .book-author
           .book-author__label
             著者
             %span.require
               必須
           %br/
           = f.text_field :author
-        .book-publication__from
+        .book-publication
           .book-publication__label
             出版
             %span.require
