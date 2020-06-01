@@ -31,7 +31,7 @@
           %span.require 必須
           .listing-select-wrapper
             .listing-select-wrapper__box
-              = f.select :genre
+              = f.select :book_genre_id, @book_genre.map {|n| [n.name,n.id]}, {include_blank: '選択してください'}, {class: 'listing-select-wrapper__box--select', id: 'parent_genre'}
         .book-image__from
           .book-image__label
             本の表紙
