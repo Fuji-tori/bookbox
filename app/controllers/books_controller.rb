@@ -1,5 +1,5 @@
 class BooksController < ApplicationController
-  before_action :set_book, except: [:index,:new,:get_genre_children,:get_genre_grandchildren]
+  before_action :set_book, except: [:index,:new,:create,:get_genre_children,:get_genre_grandchildren]
 
   def index
     @books = Book.all
@@ -18,10 +18,25 @@ class BooksController < ApplicationController
     @genre_grandchildren = BookGenre.find("#{params[:child_id]}").children
   end
 
+  def create
+    @book = Book.new(book_params)
+    @book_genre = BookGenre.where(ancestry: nil)
+    if @book.save!
+      redirect_to root_path
+    else
+      render :new
+    end
+  end
+
+  def edit
+    @book = Book.find(params[:id])
+    @book_genre = BookGenre.where(ancestry: nil)
+  end
+
   private
 
   def book_params
-    params.require(:book).permit(:bookname, :author, :publication, :price, :synopsis, :review, :book_genre_id).merge(user_id: current_user.id)
+    params.require(:book).permit(:book_name, :author, :publication, :price, :synopsis, :review, :book_genre_id).merge(user_id: current_user.id)
   end
 
   def set_book

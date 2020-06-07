@@ -10,7 +10,7 @@
 .user-new__form {
   height: 100%;
   width: 50%;
-  background-color: white;
+  background-color: #fff;
   margin: 0 auto;
   &--title {
     height: 100px;
@@ -98,7 +98,7 @@ input[type="date"] {
 input[type="submit"] {
   width: 350px;
   height: 40px;
-  background-color: #3ccace;
+  background-color: rgb(0, 0, 0);
   border: 1px solid #3ccace;
   color: white;
   font-size: 18px;

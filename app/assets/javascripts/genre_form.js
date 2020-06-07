@@ -2,7 +2,7 @@ $(function(){
   let postId = null;
   // カテゴリーセレクトボックスのオプションを作成
   function appendOption(genre){
-    var html = `<option value="${genre.id}" data-category="${genre.id}">${genre.name}</option>`;
+    var html = `<option value="${genre.id}" data-genre="${genre.id}">${genre.name}</option>`;
     return html;
   }
   // 子カテゴリーの表示作成
@@ -10,7 +10,7 @@ $(function(){
     var childSelectHtml = '';
     childSelectHtml = `<div class='listing-select-wrapper__added' id= 'children_wrapper'>
                         <div class='listing-select-wrapper__box'>
-                          <select class="listing-select-wrapper__box--select" id="child_category" name="">
+                          <select class="listing-select-wrapper__box--select" id="child_genre" name="">
                             <option value>---</option>
                             ${insertHTML}
                           <select>
@@ -23,7 +23,7 @@ $(function(){
     var grandchildSelectHtml = '';
     grandchildSelectHtml = `<div class='listing-select-wrapper__added' id= 'grandchildren_wrapper'>
                               <div class='listing-select-wrapper__box'>
-                                <select class="listing-select-wrapper__box--select" id="grandchild_category" name="book[book_genre_id]">
+                                <select class="listing-select-wrapper__box--select" id="grandchild_ganre" name="book[book_genre_id]">
                                   <option value>---</option>
                                   ${insertHTML}
                                 </select>
