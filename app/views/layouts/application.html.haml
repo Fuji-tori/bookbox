@@ -11,8 +11,9 @@
     .header
       .header__inner
         .main-header
-          %h1.icon 
-            = link_to "#" do
+          %h1.icon.bold 
+            = link_to root_path do
+              BOOKBOX
           .search-box
             .form
               %input{type: "text",class: "search-box__text", placeholder: "キーワードから探す"}
@@ -29,7 +30,8 @@
               %li.list-right__logout
                 = link_to "ログアウト", destroy_user_session_path, method: :delete
               %li.list-right__mypage
-                = link_to "マイページ", users_show_path(current_user.id)
+                = link_to "#" do
+                  マイページ
             - else
               %li.list-right__login
                 = link_to new_user_session_path do
@@ -41,5 +43,5 @@
       = yield
 
     %footer
-      %p
+      %p.footer-item
         BOOK BOX.

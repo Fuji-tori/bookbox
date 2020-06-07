@@ -1,0 +1,69 @@
+.book-new__contents
+  .book_form
+    = form_for @book do |f|
+      .book-new_label
+        %h3
+          投稿
+      .book-name
+        .book-name__from
+          .book-name__label
+            タイトル
+            %span.require
+              必須
+          %br/
+          = f.text_field :book_name
+        .book-author
+          .book-author__label
+            著者
+            %span.require
+              必須
+          %br/
+          = f.text_field :author
+        .book-publication
+          .book-publication__label
+            出版
+            %span.require
+              必須
+          %br/
+          = f.text_field :publication
+        .listing-book-detail__genre
+          = f.label 'ジャンル', class: 'listing-default__label'
+          %span.require 必須
+          .listing-select-wrapper
+            .listing-select-wrapper__box
+              = f.select :book_genre_id, @book_genre.map {|n| [n.name,n.id]}, {include_blank: '選択してください'}, {class: 'listing-select-wrapper__box--select', id: 'parent_genre'}
+        .book-image__from
+          .book-image__label
+            本の表紙
+            %span.require
+              必須
+          %br/
+          %i.fas.fa-camera
+            = f.file_field :image
+        .book-synopsis__from
+          .book-synopsis__label
+            あらすじ
+            %span.require
+              必須
+          %br/
+          = f.text_field :synopsis
+        .book-review__from
+          .book-review__label
+            感想
+            %span.require
+              必須
+          %br/
+          = f.text_field :review
+        .book-price__from
+          .book-price__label
+            値段
+            %span.require
+              必須
+          %br/
+          = f.number_field :price
+      .btn
+        .exhibition_btn
+          = f.submit "投稿"
+
+
+-# タイトル○、著者○、出版社○、値段○、あらすじ○、写真○、感想○、ジャンル○
