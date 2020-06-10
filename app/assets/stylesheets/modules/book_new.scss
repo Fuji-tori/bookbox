@@ -1,11 +1,13 @@
 * {
   box-sizing: border-box;
 }
+
 .book-new__contents{
   background: rgb(245, 245, 245);
   height: 100%;
   width: 100%;
 }
+
 .book_form {
   height: 100%;
   width: 50%;
@@ -45,6 +47,18 @@
       margin-bottom: 20px;
       &__label {
         margin-top: 20px;
+      }
+    }
+    .listing-book-detail__genre{
+      margin-bottom: 20px;
+      .listing-select-wrapper {
+        margin-top: 10px;
+        .listing-select-wrapper__box--select {
+          margin-top: 5px;
+        }
+      }
+      .listing-select-wrapper__box--select {
+        margin-bottom: 5px;
       }
     }
   }

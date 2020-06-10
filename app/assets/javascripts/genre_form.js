@@ -16,7 +16,7 @@ $(function(){
                           <select>
                         </div>
                       </div>`;
-    $('.listing-item-detail__category').append(childSelectHtml);
+    $('.listing-book-detail__genre').append(childSelectHtml);
   }
   // 孫カテゴリーの表示作成
   function appendGrandchidrenBox(insertHTML){
