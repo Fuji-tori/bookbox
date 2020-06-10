@@ -1,4 +1,4 @@
-json.array! @genre_grandchildren do |grandchild|
-  json.id grandchild.id
-  json.name grandchild.name
+json.array! @genre_children do |child|
+  json.id child.id
+  json.name child.name
 end
