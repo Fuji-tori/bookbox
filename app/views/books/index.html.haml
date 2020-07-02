@@ -1,12 +1,17 @@
+.blank-content
+.contents.row
+  - @books.each do |book|
+    .content_post{:style => "background-image: url(#{book.image});"}
+      = simple_format(book.book_name)
+      %span.name
+        = book.author
+
+.blank-content
+
 = link_to new_book_path do
   .post-btn
     %span.post-btn__text
       投稿する
     .post-btn
 
--# .contents.row
--#   - @books.each do |book|
--#     .content_post{:style => "background-image: url(#{book.image});"}
--#       = simple_format(book.author)
--#       %span.name
--#         = book.bookname
+.blank-content

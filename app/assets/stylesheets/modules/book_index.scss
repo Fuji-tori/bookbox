@@ -1,0 +1,24 @@
+.contents.row {
+  .content_post {
+    position: relative;
+    height: 300px;
+    width: 225px;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    border-radius: 3px;
+    p {
+      font-size: 20px;
+      font-weight: bold;
+      text-shadow: 0 0 1px #000, 0 0 1px #000, 0 0 1px #000;
+      text-align: center;
+    }
+    span.name {
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+      font-size: 13px;
+      text-shadow: 0 0 1px #000, 0 0 1px #000, 0 0 1px #000;
+    }
+  }
+}
