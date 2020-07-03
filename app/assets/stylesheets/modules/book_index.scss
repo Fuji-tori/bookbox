@@ -22,3 +22,23 @@
     }
   }
 }
+
+a {
+  .post-btn {
+    width: 120px;
+    background: rgb(60, 60, 60);
+    text-align: center;
+    border-radius: 4%;
+    bottom: 32px;
+    right: 32px;
+    position: fixed;
+    padding: 15px;
+    .post-btn__text{
+      color: #fff;
+      display: block;
+      font-size: 16px;
+      text-decoration: none;
+      margin-bottom: 5px;
+    }
+  }
+}
