@@ -28,6 +28,9 @@ class BooksController < ApplicationController
     end
   end
 
+  def show
+  end
+
   def edit
     @book = Book.find(params[:id])
     @book_genre = BookGenre.where(ancestry: nil)
