@@ -1,5 +1,9 @@
 .blank-content
 
-
+.book-sh__page
+  .book-sh__name
+    = @book.book_name
+  .book-sh__image
+    = image_tag "/public/uploads/book/image/#{@book.image}", size: "300x300"
 
 .blank-content

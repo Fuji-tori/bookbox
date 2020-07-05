@@ -2,7 +2,8 @@
 .contents.row
   - @books.each do |book|
     .content_post{:style => "background-image: url(#{book.image});"}
-      = simple_format(book.book_name)
+      = link_to book_path(book.id) do
+        = simple_format(book.book_name)
       %span.name
         = book.author
 
