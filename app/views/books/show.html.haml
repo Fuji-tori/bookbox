@@ -1,9 +1,25 @@
 .blank-content
 
 .book-sh__page
+  .book-sh__title
+    タイトル
   .book-sh__name
     = @book.book_name
   .book-sh__image
-    = image_tag "/public/uploads/book/image/#{@book.image}", size: "300x300"
+    = image_tag "/public/uploads/book/image/#{@book.image}", size: "210x280"
+  .book-sh__table
+    %ul.book-data__list
+      %li.data-list
+        著者
+      %li.data-list
+        出版
+      %li.data-list
+        ジャンル
+      %li.data-list
+        あらすじ
+      %li.data-list
+        感想
+      %li.data-list
+        値段
 
 .blank-content
