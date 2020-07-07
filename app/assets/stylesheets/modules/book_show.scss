@@ -40,3 +40,28 @@
   line-height: 60px;
   background-color: #efefefef;
 }
+
+.data-list__long {
+  height: 100px;
+  width: 180px;
+  padding-left: 10px;
+  border: 1px solid lightgray;
+  line-height: 60px;
+  background-color: #efefefef;
+}
+
+.detail-list {
+  height: 60px;
+  width: 460px;
+  padding-left: 10px;
+  border: 1px solid lightgrey;
+  line-height: 60px;
+}
+
+.detail-list__long {
+  height: 100px;
+  width: 460px;
+  padding-left: 10px;
+  border: 1px solid lightgrey;
+  line-height: 60px;
+}

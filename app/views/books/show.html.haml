@@ -15,11 +15,24 @@
         出版
       %li.data-list
         ジャンル
-      %li.data-list
+      %li.data-list__long
         あらすじ
-      %li.data-list
+      %li.data-list__long
         感想
       %li.data-list
         値段
+    %ul.book-detail__list
+      %li.detail-list
+        = @book.author
+      %li.detail-list
+        = @book.publication
+      %li.detail-list
+        = "#{@book.book_genre.parent.parent.name} ＞ #{@book.book_genre.parent.name} ＞ #{@book.book_genre.name}"
+      %li.detail-list__long
+        = @book.synopsis
+      %li.detail-list__long
+        = @book.review
+      %li.detail-list
+        = @book.price
 
 .blank-content
