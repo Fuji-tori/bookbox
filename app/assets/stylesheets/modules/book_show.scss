@@ -65,3 +65,17 @@
   border: 1px solid lightgrey;
   line-height: 60px;
 }
+
+.book-comment {
+  width: 700px;
+  padding-top: 40px;
+  margin: 0 auto;
+  background-color: white;
+  &__area {
+  width: calc(100% - 60px);
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  font-size: 17px;
+  }
+}
