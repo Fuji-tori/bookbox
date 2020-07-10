@@ -1,4 +1,10 @@
 .blank-content
+
+.top-image
+
+.book-post__new
+  新規投稿
+
 .contents.row
   - @books.each do |book|
     .content_post{:style => "background-image: url(#{book.image});"}
@@ -15,4 +21,8 @@
       投稿する
     .post-btn__icon
 
-.blank-content
+.footer-line
+
+%footer
+  %p.footer-item
+    BOOK BOX.
