@@ -2,27 +2,27 @@
 
 .top-image
 
-.book-post__new
-  新規投稿
-
-.contents.row
-  - @books.each do |book|
-    .content_post{:style => "background-image: url(#{book.image});"}
-      = link_to book_path(book.id) do
-        = simple_format(book.book_name)
-      %span.name
-        = book.author
+.book-post__contents
+  .book-post__new
+    新規投稿
+  .contents.row
+    - @books.each do |book|
+      .content_post{:style => "background-image: url(#{book.image});"}
+        = link_to book_path(book.id) do
+          = simple_format(book.book_name)
+        %span.name
+          = book.author
 
 .blank-content
+
+.footer-line
+
+%footer
+  %p.footer-item.bold
+    BOOK BOX.
 
 = link_to new_book_path do
   .post-btn
     %span.post-btn__text
       投稿する
     .post-btn__icon
-
-.footer-line
-
-%footer
-  %p.footer-item
-    BOOK BOX.
