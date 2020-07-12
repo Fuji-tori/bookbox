@@ -30,8 +30,7 @@
               %li.list-right__logout
                 = link_to "ログアウト", destroy_user_session_path, method: :delete
               %li.list-right__mypage
-                = link_to "#" do
-                  マイページ
+                = link_to "マイページ", users_show_path(current_user.id)
             - else
               %li.list-right__login
                 = link_to new_user_session_path do
