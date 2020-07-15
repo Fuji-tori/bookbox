@@ -10,13 +10,30 @@
     padding-bottom: 20px;
     border-bottom: solid 1px rgb(245, 245, 245);
   }
+
 }
 .mypage-post {
+  float: right;
   height: 300px;
+  width: 70%;
   background-color: #fff;
+  margin: 10px;
   &__title {
     text-align: center;
     font-size: 16px;
-    padding-top: 20px;
+    padding: 20px 0;
+    border: solid 1px rgb(245, 245, 245);
   }
+  .mypage-post__content {
+    height: 400px;
+    background-color: rgb(247, 247, 247);
+  }
+}
+
+.mypage-left {
+  height: 500px;
+  width: 27%;
+  background-color: rgb(247, 247, 247);
+  margin: 10px 0 0 10px;
+  float: left;
 }
