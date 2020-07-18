@@ -1,70 +1,71 @@
 .blank-content
 .book-new__contents
-  .book_form
-    = form_for @book do |f|
-      .book-new_label
-        %h3.book-newpost
-          投稿
-      .book-name
-        .book-name__from.bold
-          .book-name__label
-            タイトル
-            %span.require
-              必須
-          %br/
-          = f.text_field :book_name
-        .book-author
-          .book-author__label.bold
-            著者
-            %span.require
-              必須
-          %br/
-          = f.text_field :author
-        .book-publication
-          .book-publication__label.bold
-            出版
-            %span.require
-              必須
-          %br/
-          = f.text_field :publication
-        .listing-book-detail__genre.bold
-          = f.label 'ジャンル', class: 'listing-default__label'
-          %span.require 必須
-          .listing-select-wrapper
-            .listing-select-wrapper__box
-              = f.select :book_genre_id, @book_genre.map {|n| [n.name,n.id]}, {include_blank: '選択してください'}, {class: 'listing-select-wrapper__box--select', id: 'parent_genre'}
-        .book-image__from
-          .book-image__label.bold
-            本の表紙
-            %span.require
-              必須
-          %br/
-          %i.fas.fa-camera
-            = f.file_field :image
-        .book-synopsis__from
-          .book-synopsis__label.bold
-            あらすじ
-            %span.require
-              必須
-          %br/
-          = f.text_field :synopsis
-        .book-review__from
-          .book-review__label.bold
-            感想
-            %span.require
-              必須
-          %br/
-          = f.text_field :review
-        .book-price__from
-          .book-price__label.bold
-            値段
-            %span.require
-              必須
-          %br/
-          = f.number_field :price
-      .btn
-        .exhibition_btn
-          = f.submit "投稿"
+  .book-new__back
+    .book_form
+      = form_for @book do |f|
+        .book-new_label
+          %h3.book-newpost
+            投稿
+        .book-name
+          .book-name__form.bold
+            .book-name__label
+              タイトル
+              %span.require
+                必須
+            %br/
+            = f.text_field :book_name
+          .book-author
+            .book-author__label.bold
+              著者
+              %span.require
+                必須
+            %br/
+            = f.text_field :author
+          .book-publication
+            .book-publication__label.bold
+              出版
+              %span.require
+                必須
+            %br/
+            = f.text_field :publication
+          .listing-book-detail__genre.bold
+            = f.label 'ジャンル', class: 'listing-default__label'
+            %span.require 必須
+            .listing-select-wrapper
+              .listing-select-wrapper__box
+                = f.select :book_genre_id, @book_genre.map {|n| [n.name,n.id]}, {include_blank: '選択してください'}, {class: 'listing-select-wrapper__box--select', id: 'parent_genre'}
+          .book-image__form
+            .book-image__label.bold
+              本の表紙
+              %span.require
+                必須
+            %br/
+            %i.fas.fa-camera
+              = f.file_field :image
+          .book-synopsis__form
+            .book-synopsis__label.bold
+              あらすじ
+              %span.require
+                必須
+            %br/
+            = f.text_field :synopsis
+          .book-review__form
+            .book-review__label.bold
+              感想
+              %span.require
+                必須
+            %br/
+            = f.text_field :review
+          .book-price__form
+            .book-price__label.bold
+              値段
+              %span.require
+                必須
+            %br/
+            = f.number_field :price
+        .btn
+          .exhibition_btn
+            = f.submit "投稿"
 
 .blank-content
 

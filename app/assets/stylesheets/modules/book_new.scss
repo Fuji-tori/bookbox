@@ -3,33 +3,42 @@
 }
 
 .book-new__contents{
-  background: rgb(245, 245, 245);
+  background: white;
   height: 100%;
   width: 100%;
 }
 
+.book-new__back {
+  height: 100%;
+  width: 70%;
+  background-color: #fff6f6;
+  margin: 0 auto;
+}
+
 .book_form {
   height: 100%;
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
-  background-color: white;
+  background-color: #fff6f6;
   .book-newpost{
     padding: 20px;
-    border-bottom: solid 1px rgb(245, 245, 245);
+    margin-bottom: 20px;
+    border-bottom: solid 1px rgb(226, 226, 226);
     text-align: center;
     font-size: 25px;
   }
   input {
     width: 100%;
     height: 48px;
-    border: 1px solid #ccc;
-    margin: 0;
+    background-color: white;
+    border: 1px solid #ffd2d2;
+    margin: 0 0 15px;
     padding: 0 16px;
   }
   select {
     width: 100%;
     height: 48px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffd2d2;
     margin: 0;
     padding: 0 16px;
     border-radius: 4px;

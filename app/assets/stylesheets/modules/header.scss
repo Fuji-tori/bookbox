@@ -46,8 +46,10 @@
               width: 36px;
               border: 0;
               cursor: pointer;
-              background-color: #c23838;
+              background: radial-gradient(#ff9696, #ff3535);
               padding: 8px;
+              border: 3px solid #ff4b4b;
+              border-radius: 15%;
               .search-button{
                 margin: 0;
                 padding: 0;

@@ -110,9 +110,9 @@
 a {
   .post-btn {
     width: 120px;
-    background-color: rgb(158, 47, 47);
+    background: radial-gradient(#ff9696, #ff3535);
     text-align: center;
-    border-radius: 4%;
+    border-radius: 15%;
     bottom: 32px;
     right: 32px;
     position: fixed;
@@ -121,7 +121,7 @@ a {
       color: #fff;
       display: block;
       font-size: 16px;
-      text-decoration: none;
+      text-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
       margin-bottom: 5px;
     }
   }
