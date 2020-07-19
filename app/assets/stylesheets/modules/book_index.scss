@@ -81,7 +81,7 @@
     margin-bottom: 20px;
   }
   .contents.row {
-    .content_post {
+    .content-post {
       position: relative;
       height: 300px;
       width: 225px;
@@ -89,20 +89,24 @@
       background-size: cover;
       background-position: center;
       border-radius: 3px;
-      p {
-        color: #fff;
-        font-size: 20px;
-        font-weight: bold;
-        text-shadow: 0 0 1px #000, 0 0 1px #000, 0 0 1px #000;
-        text-align: center;
+      margin: 10px;
+      border: 1px solid #ccc;
+    }
+    .content-post__list {
+      .content-post__left {
+        
       }
-      span.name {
-        position: absolute;
-        right: 30px;
-        bottom: 30px;
-        font-size: 13px;
-        text-shadow: 0 0 1px #000, 0 0 1px #000, 0 0 1px #000;
+    }
+    .content-post__right {
+      font-size: 20px;
+      a {
+        color: #000;
       }
+    }
+    span.name {
+      right: 30px;
+      bottom: 30px;
+      font-size: 13px;
     }
   }
 }
