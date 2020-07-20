@@ -81,6 +81,9 @@
     margin-bottom: 20px;
   }
   .contents.row {
+    height: 453px;
+    width: 247px;
+    border: 1px solid rgb(218, 218, 218);
     .content-post {
       position: relative;
       height: 300px;
@@ -89,24 +92,49 @@
       background-size: cover;
       background-position: center;
       border-radius: 3px;
-      margin: 10px;
-      border: 1px solid #ccc;
+      margin: 10px 10px 2px;
     }
     .content-post__list {
-      .content-post__left {
-        
+      position: relative;
+      display: flex;
+      margin-left: 10px;
+      .post-left {
+        height: 25px;
+        width: 60px;
+        padding-left: 10px;
+        border: 1px solid #f1f1f1;
+        line-height: 25px;
+        font-size: 10px;
+        background-color: #fff8f8;
+      }
+      .post-left__long {
+        height: 77px;
+        width: 60px;
+        padding-left: 10px;
+        border: 1px solid #f1f1f1;
+        line-height: 75px;
+        font-size: 10px;
+        background-color: #fff8f8;
       }
     }
-    .content-post__right {
-      font-size: 20px;
+    .post-right {
+      height: 25px;
+      width: 165px;
+      padding-left: 10px;
+      border: 1px solid #f1f1f1;
+      line-height: 25px;
       a {
         color: #000;
       }
     }
-    span.name {
-      right: 30px;
-      bottom: 30px;
-      font-size: 13px;
+    .post-right__long {
+      border: 1px solid #f1f1f1;
+      .post-right__genre {
+        height: 25px;
+        width: 163px;
+        padding-left: 10px;
+        line-height: 25px;
+      }
     }
   }
 }

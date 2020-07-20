@@ -13,18 +13,25 @@
       .content-post{:style => "background-image: url(#{book.image});"}
       .content-post__list
         %ul.content-post__left
-          %li.post-list
+          %li.post-left
             タイトル
-          %li.data-list
+          %li.post-left__long
             ジャンル
-          %li.post-list
+          %li.post-left
             著者
         %ul.content-post__right
           %li.post-right
             = link_to book_path(book.id) do
               = simple_format(book.book_name)
-          %li.detail-list
-            = "#{@book.book_genre.parent.parent.name} ＞ #{@book.book_genre.parent.name} ＞ #{@book.book_genre.name}"
+          %li.post-right__long
+            .post-right__genre
+              = "#{book.book_genre.parent.parent.name}" 
+            .post-right__genre
+              >
+              = "#{book.book_genre.parent.name}"
+            .post-right__genre
+              >
+              = "#{book.book_genre.name}"
           %li.post-right
             = book.author
 
