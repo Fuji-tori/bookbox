@@ -58,7 +58,7 @@
   font-family: 'Playfair Display', serif;
   letter-spacing: .4em;
   font-size: 24px;
-  text-shadow: 0 2px 0 rgba(black, .1);
+  text-shadow: 0 1px 0 white;
   text-indent: .3em;
 }
 @keyframes drift {
@@ -69,7 +69,7 @@
 .title-line {
   position: absolute;
   left: 0;
-  top: 160px;
+  top: 170px;
   width: 100%;
   z-index: 1;
   text-align: center;
@@ -82,13 +82,13 @@
 .sub-title {
   position: absolute;
   left: 0;
-  top: 177px;
+  top: 190px;
   width: 100%;
   z-index: 1;
   text-align: center;
   color: white;
   font-size: 16px;
-  text-shadow: 0 1px 0 #ffbbbb;
+  text-shadow: 0 1px 0 #ffc8c8;
 }
 
 .book-post__contents {
@@ -108,7 +108,8 @@
   .contents.row {
     height: 453px;
     width: 247px;
-    border: 1px solid #ffdede;
+    border: 2px solid #ffdede;
+    border-radius: 3%;
     .content-post {
       position: relative;
       height: 300px;
@@ -127,33 +128,35 @@
         height: 25px;
         width: 60px;
         padding-left: 10px;
-        border: 1px solid #f1f1f1;
+        border: 1px solid #ffe5e5;
         line-height: 25px;
         font-size: 10px;
-        background-color: #fff8f8;
+        background-color: #ffefef;
       }
       .post-left__long {
         height: 77px;
         width: 60px;
         padding-left: 10px;
-        border: 1px solid #f1f1f1;
+        border: 1px solid #ffe5e5;
         line-height: 75px;
         font-size: 10px;
-        background-color: #fff8f8;
+        background-color: #ffefef;
       }
     }
     .post-right {
       height: 25px;
       width: 165px;
       padding-left: 10px;
-      border: 1px solid #f1f1f1;
+      border: 1px solid #ffe5e5;
       line-height: 25px;
+      background-color: #fff6f6;
       a {
         color: #000;
       }
     }
     .post-right__long {
-      border: 1px solid #f1f1f1;
+      border: 1px solid #ffe5e5;;
+      background-color: #fff6f6;
       .post-right__genre {
         height: 25px;
         width: 163px;
