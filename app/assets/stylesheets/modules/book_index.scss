@@ -152,6 +152,9 @@
       background-color: #fff6f6;
       a {
         color: #000;
+        :hover { 
+          color: #000; background-color: rgb(255, 232, 232);
+        }
       }
     }
     .post-right__long {
