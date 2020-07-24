@@ -119,6 +119,7 @@
       background-position: center;
       border-radius: 3px;
       margin: 10px 10px 2px;
+      border-radius: 3%;
     }
     .content-post__list {
       position: relative;
@@ -187,6 +188,9 @@ a {
       text-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
       margin-bottom: 5px;
     }
+  }
+  .post-btn:hover {
+    transform: translateY(-0.1875em);
   }
 }
 
