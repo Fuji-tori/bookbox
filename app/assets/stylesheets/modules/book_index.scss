@@ -160,7 +160,7 @@
       }
     }
     .post-right__long {
-      border: 1px solid #ffe5e5;;
+      border: 1px solid #ffe5e5;
       background-color: #fff6f6;
       .post-right__genre {
         height: 25px;
@@ -177,7 +177,7 @@ a {
     width: 120px;
     background: radial-gradient(#ff9696, #ff3535);
     text-align: center;
-    border-radius: 15%;
+    border-radius: 30%;
     bottom: 32px;
     right: 32px;
     position: fixed;
@@ -188,6 +188,12 @@ a {
       font-size: 16px;
       text-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
       margin-bottom: 5px;
+    }
+    .post-btn__icon{
+      .post-btn__image{
+        width: 60%;
+        mix-blend-mode: screen;
+      }
     }
   }
   .post-btn:hover {
