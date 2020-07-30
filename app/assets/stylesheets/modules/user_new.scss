@@ -67,6 +67,10 @@ input[type="text"] {
   border-radius: 4px;
   border: 1px solid #ffd2d2;
 }
+input[type="text"]:focus {
+  border: 3px solid #ff6565;
+  outline: 0;
+}
 
 input[type="email"] {
   width: 100%;
