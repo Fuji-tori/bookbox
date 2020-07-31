@@ -57,7 +57,7 @@
   text-transform: uppercase;
   font-family: 'Playfair Display', serif;
   letter-spacing: .4em;
-  font-size: 24px;
+  font-size: 30px;
   text-shadow: 0 1px 0 white;
   text-indent: .3em;
 }
@@ -74,7 +74,7 @@
   z-index: 1;
   text-align: center;
   color: white;
-  font-size: 16px;
+  font-size: 20px;
   border-bottom: 1px white;
   text-shadow: 0 1px 0 white;
 }
@@ -82,12 +82,12 @@
 .sub-title {
   position: absolute;
   left: 0;
-  top: 190px;
+  top: 195px;
   width: 100%;
   z-index: 1;
   text-align: center;
   color: white;
-  font-size: 16px;
+  font-size: 20px;
   text-shadow: 0 1px 0 #ffc8c8;
 }
 
@@ -241,6 +241,7 @@ a {
   height: 100px;
   width: 100%;
   background: linear-gradient(white, #ee8888) fixed;
+  margin-top: 40px;
 }
 
 footer {
