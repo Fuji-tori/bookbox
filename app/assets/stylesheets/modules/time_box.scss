@@ -8,7 +8,7 @@
   -webkit-transition: all 1.2s ease;
           transition: all 1.2s ease;
   color: #fff;
-  background-color: #333; 
+  background-color: rgb(255, 225, 218); 
 }
 
 .spinner{
@@ -36,6 +36,87 @@
     span{
       animation:spinner8_loading_text 1.4s infinite linear;
     }
+  }
+}
+
+@keyframes spinner8_1{
+  0%,
+  95%,
+  100%{
+    box-shadow:-28px -28px transparent, 0 -28px transparent, 28px -28px transparent, -28px 0 transparent, 28px 0 transparent, -28px 28px transparent, 0 28px transparent, 28px 28px transparent;
+  }
+  5%{
+    box-shadow:-28px -28px, 0 -28px transparent, 28px -28px transparent, -28px 0 transparent, 28px 0 transparent, -28px 28px transparent, 0 28px transparent, 28px 28px transparent;
+  }
+  10%{
+    box-shadow:-28px -28px, 0 -28px, 28px -28px transparent, -28px 0 transparent, 28px 0 transparent, -28px 28px transparent, 0 28px transparent, 28px 28px transparent;
+  }
+  15%{
+    box-shadow:-28px -28px, 0 -28px, 28px -28px, -28px 0 transparent, 28px 0 transparent, -28px 28px transparent, 0 28px transparent, 28px 28px transparent;
+  }
+  20%{
+    box-shadow:-28px -28px, 0 -28px, 28px -28px, -28px 0, 28px 0 transparent, -28px 28px transparent, 0 28px transparent, 28px 28px transparent;
+    background-color:transparent;
+  }
+  25%{
+    box-shadow:-28px -28px, 0 -28px, 28px -28px, -28px 0, 28px 0 transparent, -28px 28px transparent, 0 28px transparent, 28px 28px transparent;
+    background-color:#fff;
+  }
+  30%{
+    box-shadow:-28px -28px, 0 -28px, 28px -28px, -28px 0, 28px 0, -28px 28px transparent, 0 28px transparent, 28px 28px transparent;
+  }
+  35%{
+    box-shadow:-28px -28px, 0 -28px, 28px -28px, -28px 0, 28px 0, -28px 28px, 0 28px transparent, 28px 28px transparent;
+  }
+  40%{
+    box-shadow:-28px -28px, 0 -28px, 28px -28px, -28px 0, 28px 0, -28px 28px, 0 28px, 28px 28px transparent;
+  }
+  45%,
+  50%{
+    box-shadow:-28px -28px, 0 -28px, 28px -28px, -28px 0, 28px 0, -28px 28px, 0 28px, 28px 28px;
+  }
+  55%{
+    box-shadow:-28px -28px transparent, 0 -28px, 28px -28px, -28px 0, 28px 0, -28px 28px, 0 28px, 28px 28px;
+  }
+  60%{
+    box-shadow:-28px -28px transparent, 0 -28px transparent, 28px -28px, -28px 0, 28px 0, -28px 28px, 0 28px, 28px 28px;
+  }
+  65%{
+    box-shadow:-28px -28px transparent, 0 -28px transparent, 28px -28px transparent, -28px 0, 28px 0, -28px 28px, 0 28px, 28px 28px;
+  }
+  70%{
+    box-shadow:-28px -28px transparent, 0 -28px transparent, 28px -28px transparent, -28px 0 transparent, 28px 0, -28px 28px, 0 28px, 28px 28px;
+    background-color:#fff;
+  }
+  75%{
+    box-shadow:-28px -28px transparent, 0 -28px transparent, 28px -28px transparent, -28px 0 transparent, 28px 0, -28px 28px, 0 28px, 28px 28px;
+    background-color:transparent;
+  }
+  80%{
+    box-shadow:-28px -28px transparent, 0 -28px transparent, 28px -28px transparent, -28px 0 transparent, 28px 0 transparent, -28px 28px, 0 28px, 28px 28px;
+  }
+  85%{
+    box-shadow:-28px -28px transparent, 0 -28px transparent, 28px -28px transparent, -28px 0 transparent, 28px 0 transparent, -28px 28px transparent, 0 28px, 28px 28px;
+  }
+  90%{
+    box-shadow:-28px -28px transparent, 0 -28px transparent, 28px -28px transparent, -28px 0 transparent, 28px 0 transparent, -28px 28px transparent, 0 28px transparent, 28px 28px;
+  }
+}
+@keyframes spinner8_loading_text{
+  0%{
+    transform:translate(-50%, -50%);
+  }
+  50%{
+    transform:translate(-50%, calc(-50% + 32px));
+    opacity:0;
+  }
+  50.1%{
+    transform:translate(-50%, calc(-50% - 32px));
+    opacity:0;
+  }
+  100%{
+    transform:translate(-50%, -50%);
+    opacity:1;
   }
 }
 
