@@ -34,28 +34,30 @@
             .listing-select-wrapper
               .listing-select-wrapper__box
                 = f.select :book_genre_id, @book_genre.map {|n| [n.name,n.id]}, {include_blank: '選択してください'}, {class: 'listing-select-wrapper__box--select', id: 'parent_genre'}
-          .book-image__form
+          .book-image
             .book-image__label.bold
               本の表紙
               %span.require
                 必須
             %br/
-            %i.fas.fa-camera
-              = f.file_field :image
-          .book-synopsis__form
+            .label-content
+              .label-box
+                = f.file_field :image, class: "image-field"
+                %i.fas.fa-image
+          .book-synopsis
             .book-synopsis__label.bold
               あらすじ
               %span.require
                 必須
             %br/
-            = f.text_field :synopsis
-          .book-review__form
+            = f.text_field :synopsis, class: "long-field"
+          .book-review
             .book-review__label.bold
               感想
               %span.require
                 必須
             %br/
-            = f.text_field :review
+            = f.text_field :review, class: "long-field"
           .book-price__form
             .book-price__label.bold
               値段
