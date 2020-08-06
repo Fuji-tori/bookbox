@@ -64,19 +64,21 @@
         margin-top: 20px;
       }
     }
-    .listing-book-detail__genre{
-      margin-bottom: 20px;
-      .listing-select-wrapper {
-        margin-top: 10px;
-        .listing-select-wrapper__box--select {
-          margin-top: 5px;
-        }
-      }
+  }
+
+  .listing-book-detail__genre{
+    margin-bottom: 20px;
+    .listing-select-wrapper {
+      margin-top: 10px;
       .listing-select-wrapper__box--select {
-        margin-bottom: 5px;
+        margin-top: 3px;
       }
     }
+    .listing-select-wrapper__box--select {
+      margin-bottom: 3px;
+    }
   }
+
   .book-image {
     display: block;
     &__label {
@@ -94,21 +96,23 @@
         width: 100%;
         height: 45px;
         cursor: pointer;
-        .fas.fa-image {
+        .image-tag {
           position: absolute;
-          top: 50%;
-          left: 16px;
-          right: 16px;
-          text-align: center;
-          font-size: 18px;
-          line-height: 1.5;
-          font-weight: bold;
-          -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-          pointer-events: none;
-          white-space: pre-wrap;
-          word-wrap: break-word;
-          color: #ffb8b8;
+          display: flex;
+          color: white;
+          top: 15%;
+          left: 10px;
+          background-color: #ffb8b8;
+          line-height: 2;
+          border-radius: 40%;
+          width: 65px;
+          .far.fa-image {
+            font-size: 20px;
+            line-height: 1.5;
+            pointer-events: none;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+          }
         }
         .image-field {
           display: none;
@@ -121,6 +125,7 @@
       margin-top: 20px;
     }
     .long-field {
+      padding: 10px;
       height: 150px;
       width: 100%;
       border: 1px solid #ffd2d2;
@@ -128,10 +133,12 @@
     }
   }
   .book-review {
+    margin-bottom: 20px;
     &__label {
       margin-top: 20px;
     }
     .long-field {
+      padding: 10px;
       height: 150px;
       width: 100%;
       border: 1px solid #ffd2d2;

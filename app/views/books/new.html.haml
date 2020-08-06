@@ -43,21 +43,24 @@
             .label-content
               .label-box
                 = f.file_field :image, class: "image-field"
-                %i.fas.fa-image
+                .image-tag
+                  %i.far.fa-image
+                  .image-tag__text
+                    選択
           .book-synopsis
             .book-synopsis__label.bold
               あらすじ
               %span.require
                 必須
             %br/
-            = f.text_field :synopsis, class: "long-field"
+            = f.text_area :synopsis, class: "long-field"
           .book-review
             .book-review__label.bold
               感想
               %span.require
                 必須
             %br/
-            = f.text_field :review, class: "long-field"
+            = f.text_area :review, class: "long-field"
           .book-price__form
             .book-price__label.bold
               値段
