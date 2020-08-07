@@ -41,12 +41,12 @@
                 必須
             %br/
             .label-content
-              .label-box
-                = f.file_field :image, class: "image-field"
-                .image-tag
+              = f.label :image, class: "image-field" do
+                .label-box
                   %i.far.fa-image
-                  .image-tag__text
                     選択
+                  = f.file_field :image
+
           .book-synopsis
             .book-synopsis__label.bold
               あらすじ
