@@ -78,6 +78,18 @@
       margin-bottom: 3px;
     }
   }
+  .listing-book-detail__genre:focus {
+    border: 3px solid #ff6565;
+    outline: 0;
+  }
+  .listing-select-wrapper:focus {
+    border: 3px solid #ff6565;
+    outline: 0;
+  }
+  .listing-select-wrapper__box--select:focus {
+    border: 3px solid #ff6565;
+    outline: 0;
+  }
 
   .book-image {
     display: block;
@@ -142,5 +154,13 @@
       border: 1px solid #ffd2d2;
       background-color: white;
     }
+  }
+  .long-field:focus {
+    border: 3px solid #ff6565;
+    outline: 0;
+  }
+  .price-field:focus {
+    border: 3px solid #ff6565;
+    outline: 0;
   }
 }

@@ -61,13 +61,13 @@
                 必須
             %br/
             = f.text_area :review, class: "long-field"
-          .book-price__form
+          .book-price
             .book-price__label.bold
               値段
               %span.require
                 必須
             %br/
-            = f.number_field :price
+            = f.number_field :price, class: "price-field"
         .btn
           .exhibition_btn
             = f.submit "投稿"
