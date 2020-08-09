@@ -79,6 +79,10 @@ input[type="email"] {
   border-radius: 4px;
   border: 1px solid #ffd2d2;
 }
+input[type="email"]:focus {
+  border: 3px solid #ff6565;
+  outline: 0;
+}
 
 input[type="password"] {
   width: 350px;
@@ -86,6 +90,10 @@ input[type="password"] {
   padding: 10px 16px 8px;
   border-radius: 4px;
   border: 1px solid #ffd2d2;
+}
+input[type="password"]:focus {
+  border: 3px solid #ff6565;
+  outline: 0;
 }
 
 input[type="submit"] {

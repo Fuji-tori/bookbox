@@ -32,6 +32,7 @@
     height: 48px;
     background-color: white;
     border: 1px solid #ffd2d2;
+    border-radius: 4px;
     margin: 0 0 15px;
     padding: 0 16px;
   }
@@ -39,6 +40,7 @@
     width: 100%;
     height: 48px;
     border: 1px solid #ffd2d2;
+    border-radius: 4px;
     margin: 0;
     padding: 0 16px;
     border-radius: 4px;
@@ -68,10 +70,13 @@
 
   .listing-book-detail__genre{
     margin-bottom: 20px;
+    border-radius: 4px;
     .listing-select-wrapper {
       margin-top: 10px;
+      border-radius: 4px;
       .listing-select-wrapper__box--select {
         margin-top: 3px;
+        border-radius: 4px;
       }
     }
     .listing-select-wrapper__box--select {
@@ -99,6 +104,7 @@
     .label-content{
       margin-bottom: 10px;
       border: 1px solid #ffd2d2;
+      border-radius: 4px;
       background-color: white;
       position: relative;
       width: 100%;
@@ -139,7 +145,9 @@
       height: 150px;
       width: 100%;
       border: 1px solid #ffd2d2;
+      border-radius: 4px;
       background-color: white;
+      resize: vertical;
     }
   }
   .book-review {
@@ -152,7 +160,9 @@
       height: 150px;
       width: 100%;
       border: 1px solid #ffd2d2;
+      border-radius: 4px;
       background-color: white;
+      resize: vertical;
     }
   }
   .long-field:focus {
