@@ -2,25 +2,31 @@
   background-color: white;
   height: 100%;
   width: 100%;
+  
   .book-sh__page {
     width: 700px;
     margin: 0 auto;
     margin-top: 20px;
     background-color: white;
+    padding: 20px;
+    border: 2px solid #ffd4d4;
+    border-radius: 4px;
   }
 
   .book-sh__title {
     color: rgb(168, 168, 168);
     padding-top: 10px;
     text-align: center;
+    font-size: 12px;
     font-weight: 200;
   }
 
   .book-sh__name {
     height: 50px;
     margin-bottom: 20px;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid #ffe5e5;
     text-align: center;
+    color: #484848;
     line-height: 45px;
     font-size: 30px;
     font-weight: 650;
@@ -28,45 +34,55 @@
 
   .book-sh__image {
     text-align: center;
+    border-radius: 4px;
   }
 
   .book-sh__table {
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    background-color: #ffe0e0;
+    border: 1px solid #ffd4d4;
+    border-radius: 4px;
   }
 
   .data-list {
     height: 60px;
     width: 180px;
     padding-left: 10px;
-    border: 1px solid lightgray;
+    border: 1px solid #ffe5e5;
+    color: #484848;
     line-height: 60px;
-    background-color: #efefefef;
+    background-color: #ffefef;
   }
 
   .data-list__long {
-    height: 100px;
+    height: 200px;
     width: 180px;
     padding-left: 10px;
-    border: 1px solid lightgray;
+    border: 1px solid #ffe5e5;
+    color: #484848;
     line-height: 60px;
-    background-color: #efefefef;
+    background-color: #ffefef;
   }
 
   .detail-list {
     height: 60px;
     width: 460px;
     padding-left: 10px;
-    border: 1px solid lightgrey;
+    background-color: white;
+    border: 1px solid #ffe5e5;
+    color: #484848;
     line-height: 60px;
   }
 
   .detail-list__long {
-    height: 100px;
+    height: 200px;
     width: 460px;
     padding-left: 10px;
-    border: 1px solid lightgrey;
+    background-color: white;
+    border: 1px solid #ffe5e5;
+    color: #484848;
     line-height: 60px;
   }
 
@@ -80,7 +96,9 @@
     width: calc(100% - 60px);
     margin: 0 auto;
     padding: 10px;
-    border: 1px solid lightgrey;
+    border: 2px solid #ffe7e7;
+    border-radius: 4px;
+    color: #636363;
     font-size: 17px;
     margin-bottom: 20px;
     }
