@@ -13,11 +13,15 @@
   width: 50%;
   background-color: #fff;
   margin: 0 auto;
+  border: 2px solid #ffd4d4;
+  border-radius: 4px;
+
   &--title {
     height: 100px;
-    border-bottom: solid 1px rgb(245, 245, 245);
+    border-bottom: solid 1px #ffe5e5;
     text-align: center;
     h2 {
+      color: #484848;
       font-size: 25px;
       line-height: 100px;
     }
@@ -28,6 +32,7 @@
     .nickname-field {
       margin-top: 40px;
       &__text {
+        color: #484848;
         float: left;
         margin-bottom: 3px;
       }
@@ -35,6 +40,7 @@
     .email-field {
       margin-top: 40px;
       &__text{
+        color: #484848;
         float: left;
         margin-bottom: 3px;
       }
@@ -42,6 +48,7 @@
     .password-field {
       margin-top: 40px;
       &__text{
+        color: #484848;
         float: left;
         margin-bottom: 3px;
       }
@@ -49,6 +56,7 @@
     .confimation-field {
       margin-top: 40px;
       &__text{
+        color: #484848;
         margin-bottom: 3px;
         float: left;
       }
@@ -97,6 +105,7 @@ input[type="password"]:focus {
 }
 
 input[type="submit"] {
+  width: 100%;
   height: 40px;
   background: radial-gradient(#ffb8b8, #ee8888);
   color: white;
@@ -109,6 +118,7 @@ input[type="submit"] {
 }
 
 a {
+  color: #484848;
   text-decoration: none;
 }
 

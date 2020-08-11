@@ -1,4 +1,5 @@
 .blank-content
+
 .user-new__form
   .user-new__form--title
     %h2 新規アカウントの作成
@@ -35,8 +36,9 @@
         %br/
         = f.password_field :password_confirmation, autocomplete: "new-password"
       .actions
-        = f.submit "アカウントを作成"
+        = f.submit "アカウント作成"
     %br/
     = render "devise/shared/links"
     %br/
+
 .blank-content
