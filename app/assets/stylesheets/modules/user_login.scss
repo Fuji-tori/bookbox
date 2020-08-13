@@ -1,0 +1,23 @@
+.login-body {
+  height: 100%;
+  width: 50%;
+  margin: 0 auto;
+  border: 2px solid #ffd4d4;
+  border-radius: 4px;
+  .login-form {
+    color: #484848;
+    font-size: 25px;
+    line-height: 80px;
+    text-align: center;
+    border-bottom: solid 1px #ffe5e5;
+  }
+  .login-item {
+    margin: 30px;
+    input[type="email"] {
+      margin-bottom: 15px;
+    }
+    input[type="password"] {
+      margin-bottom: 10px;
+    }
+  }
+}
