@@ -1,39 +1,49 @@
 .mypage-user {
+  width: 100%;
   height: 150px;
   background-color: #fff;
   &__image {
     height: 100px;
   }
   &__name {
-    text-align: center;
-    font-size: 18px;
+    color: #484848;
+    left: 20px;
+    font-size: 23px;
     padding-bottom: 20px;
-    border-bottom: solid 1px rgb(245, 245, 245);
+    border-bottom: solid 1px #ffe5e5;
+    display: flex;
   }
-
-}
-.mypage-post {
-  float: right;
-  height: 300px;
-  width: 70%;
-  background-color: #fff;
-  margin: 10px;
-  &__title {
-    text-align: center;
-    font-size: 16px;
-    padding: 20px 0;
-    border: solid 1px rgb(245, 245, 245);
-  }
-  .mypage-post__content {
-    height: 400px;
-    background-color: rgb(247, 247, 247);
+  &__sub {
+    color: #484848;
+    font-size: 14px;
   }
 }
 
-.mypage-left {
-  height: 500px;
-  width: 27%;
-  background-color: rgb(247, 247, 247);
-  margin: 10px 0 0 10px;
-  float: left;
+.mypage-box {
+  padding: 20px;
+  .mypage-post {
+    float: right;
+    height: 300px;
+    width: 70%;
+    background-color: #fff;
+    margin: 10px;
+    &__title {
+      color: #484848;
+      text-align: center;
+      font-size: 16px;
+      padding: 20px 0;
+      border: 1px solid #ffd2d2;
+    }
+    .mypage-post__content {
+      height: 400px;
+      background-color: #fff0f0;
+    }
+  }
+
+  .mypage-left {
+    height: 500px;
+    width: 27%;
+    background-color: #fff0f0;
+    margin: 10px 0 0 10px;
+  }
 }
