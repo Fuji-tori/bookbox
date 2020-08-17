@@ -3,6 +3,7 @@
 .mypage-body
   .mypage-user
     .mypage-user__image
+      %i.fas.fa-camera
     .mypage-user__name.bold
       = @nickname
       .mypage-user__sub
@@ -16,13 +17,16 @@
 
     .mypage-left
       .mypage-left__list
-        投稿
+        = link_to "投稿", users_show_path(current_user.id)
       .mypage-left__list
-        ブックマーク
+        = link_to "#" do
+          ブックマーク
       .mypage-left__list
-        閲覧履歴
+        = link_to "#" do
+          閲覧履歴
       .mypage-left__list
-        ユーザー設定
+        = link_to "#" do
+          ユーザー設定
 
   
 .blank-content
