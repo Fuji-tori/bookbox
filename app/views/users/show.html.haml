@@ -15,16 +15,16 @@
         投稿
       .mypage-post__content
 
-    .mypage-left
-      .mypage-left__list
+    %ul.mypage-left
+      %li.mypage-left__list
         = link_to "投稿", users_show_path(current_user.id)
-      .mypage-left__list
+      %li.mypage-left__list
         = link_to "#" do
           ブックマーク
-      .mypage-left__list
+      %li.mypage-left__list
         = link_to "#" do
           閲覧履歴
-      .mypage-left__list
+      %li.mypage-left__list
         = link_to "#" do
           ユーザー設定
 

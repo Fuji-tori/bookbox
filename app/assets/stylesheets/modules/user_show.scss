@@ -77,8 +77,14 @@
         border: 1px solid #ffe5e5;
         color: #484848;
         line-height: 60px;
-        background-color: #fffafa;
       }
     }
   }
+}
+
+ul.mypage-left li {
+  background-color: #fffafa;
+}
+ul.mypage-left li.selected {
+  background-color: rgb(206, 206, 206);
 }
