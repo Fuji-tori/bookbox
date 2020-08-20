@@ -14,6 +14,8 @@
       .mypage-post__title.bold
         投稿
       .mypage-post__content
+        - @books.each do |book|
+          .content-post{:style => "background-image: url(#{book.image});"}
 
     = render partial: 'mypage-left'
   
