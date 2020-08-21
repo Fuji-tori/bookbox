@@ -38,32 +38,7 @@
 .book-post__contents
   .book-post__new
     新規投稿
-  .contents.row
-    - @books.each do |book|
-      .content-post{:style => "background-image: url(#{book.image});"}
-      .content-post__list
-        %ul.content-post__left
-          %li.post-left
-            タイトル
-          %li.post-left__long
-            ジャンル
-          %li.post-left
-            著者
-        %ul.content-post__right
-          %li.post-right
-            = link_to book_path(book.id) do
-              = simple_format(book.book_name)
-          %li.post-right__long
-            .post-right__genre
-              = "#{book.book_genre.parent.parent.name}" 
-            .post-right__genre
-              %span{style: "color: #8e8e8e"} >
-              = "#{book.book_genre.parent.name}"
-            .post-right__genre
-              %span{style: "color: #8e8e8e"} >
-              = "#{book.book_genre.name}"
-          %li.post-right
-            = book.author
+  = render partial: 'bookpost'
 
 .blank-content
 
