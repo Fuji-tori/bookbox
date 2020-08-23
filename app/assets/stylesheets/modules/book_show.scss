@@ -24,9 +24,9 @@
   .book-sh__name {
     height: 50px;
     margin-bottom: 20px;
-    border-bottom: 1px solid #ffe5e5;
+    border-bottom: 1px solid $thin-border;
     text-align: center;
-    color: #484848;
+    color: $text-black;
     line-height: 45px;
     font-size: 30px;
     font-weight: 650;
@@ -50,8 +50,8 @@
     height: 60px;
     width: 180px;
     padding-left: 10px;
-    border: 1px solid #ffe5e5;
-    color: #484848;
+    border: 1px solid $thin-border;
+    color: $text-black;
     line-height: 60px;
     background-color: #ffefef;
   }
@@ -60,8 +60,8 @@
     height: 200px;
     width: 180px;
     padding-left: 10px;
-    border: 1px solid #ffe5e5;
-    color: #484848;
+    border: 1px solid $thin-border;
+    color: $text-black;
     line-height: 60px;
     background-color: #ffefef;
   }
@@ -71,8 +71,8 @@
     width: 460px;
     padding-left: 10px;
     background-color: white;
-    border: 1px solid #ffe5e5;
-    color: #484848;
+    border: 1px solid $thin-border;
+    color: $text-black;
     line-height: 60px;
   }
 
@@ -81,8 +81,8 @@
     width: 460px;
     padding-left: 10px;
     background-color: white;
-    border: 1px solid #ffe5e5;
-    color: #484848;
+    border: 1px solid $thin-border;
+    color: $text-black;
     line-height: 60px;
   }
 

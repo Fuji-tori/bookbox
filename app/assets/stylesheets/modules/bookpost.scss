@@ -2,13 +2,13 @@
   height: 498px;
   display: flex;
   .content-post__box {
-    border: 2px solid #ffdede;
+    border: 2px solid $thick-border;
     border-radius: 3%;
     margin: 10px;
     .content-post {
       height: 300px;
       width: 225px;
-      color: #fff;
+      color: $text-white;
       background-size: cover;
       background-position: center;
       border-radius: 3px;
@@ -22,9 +22,9 @@
         height: 25px;
         width: 65px;
         padding-left: 10px;
-        border: 1px solid #ffe5e5;
+        border: 1px solid $thin-border;
         line-height: 25px;
-        color: #484848;
+        color: $text-black;
         font-size: 12px;
         background-color: #ffefef;
       }
@@ -32,7 +32,7 @@
         height: 100px;
         width: 65px;
         padding-left: 10px;
-        border: 1px solid #ffe5e5;
+        border: 1px solid $thin-border;
         line-height: 100px;
         font-size: 12px;
         background-color: #ffefef;
@@ -42,13 +42,13 @@
       height: 25px;
       width: 160px;
       padding-left: 10px;
-      border: 1px solid #ffe5e5;
+      border: 1px solid $thin-border;
       line-height: 25px;
       background-color: #fff6f6;
       a {
-        color: #484848;
+        color: $text-black;
         :hover { 
-          color: #484848; background-color: rgb(255, 232, 232);
+          color: $text-black; background-color: rgb(255, 232, 232);
         }
       }
     }
@@ -61,7 +61,7 @@
         width: 158px;
         padding-left: 10px;
         line-height: 25px;
-        color: #484848;
+        color: $text-black;
       }
     }
   }
