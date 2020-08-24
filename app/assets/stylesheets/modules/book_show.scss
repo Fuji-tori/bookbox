@@ -9,7 +9,7 @@
     margin-top: 20px;
     background-color: white;
     padding: 20px;
-    border: 2px solid #ffd4d4;
+    border: 2px solid $form-border;
     border-radius: 4px;
   }
 
@@ -42,7 +42,7 @@
     display: flex;
     justify-content: center;
     background-color: #ffe0e0;
-    border: 1px solid #ffd4d4;
+    border: 1px solid $form-border;
     border-radius: 4px;
   }
 
@@ -53,7 +53,7 @@
     border: 1px solid $thin-border;
     color: $text-black;
     line-height: 60px;
-    background-color: #ffefef;
+    background-color: $item-back;
   }
 
   .data-list__long {
@@ -63,7 +63,7 @@
     border: 1px solid $thin-border;
     color: $text-black;
     line-height: 60px;
-    background-color: #ffefef;
+    background-color: $item-back;
   }
 
   .detail-list {

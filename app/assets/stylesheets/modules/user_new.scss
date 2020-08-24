@@ -13,7 +13,7 @@
   width: 50%;
   background-color: $text-white;
   margin: 0 auto;
-  border: 2px solid #ffd4d4;
+  border: 2px solid $form-border;
   border-radius: 4px;
 
   &--title {
@@ -73,10 +73,10 @@ input[type="text"] {
   height: 40px;
   padding: 10px 16px 8px;
   border-radius: 4px;
-  border: 1px solid #ffd2d2;
+  border: 1px solid $input-border;
 }
 input[type="text"]:focus {
-  border: 3px solid #ff6565;
+  border: 3px solid $focus-border;
   outline: 0;
 }
 
@@ -85,10 +85,10 @@ input[type="email"] {
   height: 40px;
   padding: 10px 16px 8px;
   border-radius: 4px;
-  border: 1px solid #ffd2d2;
+  border: 1px solid $input-border;
 }
 input[type="email"]:focus {
-  border: 3px solid #ff6565;
+  border: 3px solid $focus-border;
   outline: 0;
 }
 
@@ -97,10 +97,10 @@ input[type="password"] {
   height: 40px;
   padding: 10px 16px 8px;
   border-radius: 4px;
-  border: 1px solid #ffd2d2;
+  border: 1px solid $input-border;
 }
 input[type="password"]:focus {
-  border: 3px solid #ff6565;
+  border: 3px solid $focus-border;
   outline: 0;
 }
 
@@ -148,7 +148,7 @@ a {
   text-align: center;
   a {
     font-size: 18px;
-    color: black;
+    color: $text-black;
   }
 }
 
@@ -157,7 +157,7 @@ a {
   margin-top: 20px;
   a {
     font-size:18px;
-    color: black;
+    color: $text-black;
   }
 }
 

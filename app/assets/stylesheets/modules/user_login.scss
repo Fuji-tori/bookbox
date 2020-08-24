@@ -2,10 +2,10 @@
   height: 100%;
   width: 50%;
   margin: 0 auto;
-  border: 2px solid #ffd4d4;
+  border: 2px solid $form-border;
   border-radius: 4px;
   .login-form {
-    color: #484848;
+    color: $text-black;
     font-size: 25px;
     line-height: 80px;
     text-align: center;

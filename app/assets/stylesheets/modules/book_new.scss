@@ -11,7 +11,7 @@
 .book-new__back {
   height: 100%;
   width: 70%;
-  background-color: #fff6f6;
+  background-color: $detail-back;
   margin: 0 auto;
 }
 
@@ -19,7 +19,7 @@
   height: 100%;
   width: 80%;
   margin: 0 auto;
-  background-color: #fff6f6;
+  background-color: $detail-back;
   .book-newpost{
     padding: 20px;
     margin-bottom: 20px;
@@ -31,7 +31,7 @@
     width: 100%;
     height: 48px;
     background-color: white;
-    border: 1px solid #ffd2d2;
+    border: 1px solid $input-border;
     border-radius: 4px;
     margin: 0 0 15px;
     padding: 0 16px;
@@ -39,7 +39,7 @@
   select {
     width: 100%;
     height: 48px;
-    border: 1px solid #ffd2d2;
+    border: 1px solid $input-border;
     border-radius: 4px;
     margin: 0;
     padding: 0 16px;
@@ -84,15 +84,15 @@
     }
   }
   .listing-book-detail__genre:focus {
-    border: 3px solid #ff6565;
+    border: 3px solid $input-border;
     outline: 0;
   }
   .listing-select-wrapper:focus {
-    border: 3px solid #ff6565;
+    border: 3px solid $input-border;
     outline: 0;
   }
   .listing-select-wrapper__box--select:focus {
-    border: 3px solid #ff6565;
+    border: 3px solid $input-border;
     outline: 0;
   }
 
@@ -103,7 +103,7 @@
     }
     .label-content{
       margin-bottom: 10px;
-      border: 1px solid #ffd2d2;
+      border: 1px solid $input-border;
       border-radius: 4px;
       background-color: white;
       position: relative;
@@ -115,7 +115,7 @@
         left: 10px;
         text-align: center;
         line-height: 2;
-        background-color: #ffb8b8;
+        background-color: $image-back;
         width: 65px;
         border-radius: 40%;
         cursor: pointer;
@@ -123,7 +123,7 @@
           font-size: 15px;
           line-height: 1.5;
           color: $text-white;
-          background-color: #ffb8b8;
+          background-color: $image-back;
           line-height: 1.5;
           border-radius: 40%;
           width: 55px;
@@ -144,7 +144,7 @@
       padding: 10px;
       height: 150px;
       width: 100%;
-      border: 1px solid #ffd2d2;
+      border: 1px solid $input-border;
       border-radius: 4px;
       background-color: white;
       resize: vertical;
@@ -159,18 +159,18 @@
       padding: 10px;
       height: 150px;
       width: 100%;
-      border: 1px solid #ffd2d2;
+      border: 1px solid $input-border;
       border-radius: 4px;
       background-color: white;
       resize: vertical;
     }
   }
   .long-field:focus {
-    border: 3px solid #ff6565;
+    border: 3px solid $focus-border;
     outline: 0;
   }
   .price-field:focus {
-    border: 3px solid #ff6565;
+    border: 3px solid $focus-border;
     outline: 0;
   }
 }

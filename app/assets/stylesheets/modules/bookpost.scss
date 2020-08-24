@@ -26,7 +26,7 @@
         line-height: 25px;
         color: $text-black;
         font-size: 12px;
-        background-color: #ffefef;
+        background-color: $item-back;
       }
       .post-left__long {
         height: 100px;
@@ -35,7 +35,7 @@
         border: 1px solid $thin-border;
         line-height: 100px;
         font-size: 12px;
-        background-color: #ffefef;
+        background-color: $item-back;
       }
     }
     .post-right {
@@ -44,7 +44,7 @@
       padding-left: 10px;
       border: 1px solid $thin-border;
       line-height: 25px;
-      background-color: #fff6f6;
+      background-color: $detail-back;
       a {
         color: $text-black;
         :hover { 
@@ -53,8 +53,8 @@
       }
     }
     .post-right__long {
-      border: 1px solid #ffe5e5;
-      background-color: #fff6f6;
+      border: 1px solid $thin-border;
+      background-color: $detail-back;
       height: 100px;
       .post-right__genre {
         height: 25px;
