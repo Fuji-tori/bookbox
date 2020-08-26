@@ -1,8 +1,6 @@
 .mypage-body {
   margin: 15px;
   height: 850px;
-  border: 2px solid #ffd2d2;
-  border-radius: 4px;
   .mypage-user {
     width: 100%;
     height: 180px;
@@ -16,7 +14,7 @@
       margin: 20px;
       height: 100px;
       width: 100px;
-      border: 1px solid #ffd2d2;
+      border: 1px solid $input-border;
       border-radius: 4px;
       text-align: center;
       .fas.fa-camera {
@@ -49,8 +47,6 @@
       height: 605px;
       width: 70%;
       background-color: #fff;
-      border: 1px solid #ffd2d2;
-      border-radius: 4px;
       margin: 10px;	
       &__title {
         color: $text-black;
@@ -58,18 +54,18 @@
         font-size: 16px;
         background-color: #fff7f7;
         padding: 20px 0;
-        border: 1px solid #ffd2d2;
+        border: 2px solid $input-border;
+        border-radius: 4px;
       }
       .mypage-post__content {
         padding: 10px;
         height: 545px;
-        border: 1px solid #ffd2d2;
       }
     }
     .mypage-left {
       height: 242px;
       width: 27%;
-      border: 1px solid #ffd2d2;
+      border: 1px solid $input-border;
       border-radius: 4px;
       margin: 10px 0 0 10px;
       &__list {

@@ -2,6 +2,7 @@
   height: 498px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   .content-post__box {
     border: 2px solid $thick-border;
     border-radius: 3%;
