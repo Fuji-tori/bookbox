@@ -1,13 +1,7 @@
 .blank-content
 
 .mypage-body
-  .mypage-user
-    .mypage-user__image
-      %i.fas.fa-camera
-    .mypage-user__name.bold
-      = @nickname
-      .mypage-user__sub
-        さんのマイページ
+  = render partial: "mypage-user"
 
   .mypage-box
     .mypage-post
@@ -18,5 +12,3 @@
           = render partial: "books/bookpost"
 
     = render partial: 'mypage-left'
-  
-.blank-content
