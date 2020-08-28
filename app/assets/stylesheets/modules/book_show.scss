@@ -1,5 +1,5 @@
 .contents {
-  background-color: white;
+  background-color: $back-white;
   height: 100%;
   width: 100%;
   
@@ -7,7 +7,7 @@
     width: 700px;
     margin: 0 auto;
     margin-top: 20px;
-    background-color: white;
+    background-color: $back-white;
     padding: 20px;
     border: 2px solid $form-border;
     border-radius: 4px;
@@ -70,7 +70,7 @@
     height: 60px;
     width: 460px;
     padding-left: 10px;
-    background-color: white;
+    background-color: $back-white;
     border: 1px solid $thin-border;
     color: $text-black;
     line-height: 60px;
@@ -80,7 +80,7 @@
     height: 200px;
     width: 460px;
     padding-left: 10px;
-    background-color: white;
+    background-color: $back-white;
     border: 1px solid $thin-border;
     color: $text-black;
     line-height: 60px;
@@ -91,7 +91,7 @@
     padding-top: 40px;
     padding-bottom: 15px;
     margin: 0 auto;
-    background-color: white;
+    background-color: $back-white;
     &__area {
     width: calc(100% - 60px);
     margin: 0 auto;

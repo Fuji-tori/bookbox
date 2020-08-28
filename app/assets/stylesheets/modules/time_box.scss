@@ -60,7 +60,7 @@
   }
   25%{
     box-shadow:-28px -28px, 0 -28px, 28px -28px, -28px 0, 28px 0 transparent, -28px 28px transparent, 0 28px transparent, 28px 28px transparent;
-    background-color:#fff;
+    background-color:$back-white;
   }
   30%{
     box-shadow:-28px -28px, 0 -28px, 28px -28px, -28px 0, 28px 0, -28px 28px transparent, 0 28px transparent, 28px 28px transparent;
@@ -86,7 +86,7 @@
   }
   70%{
     box-shadow:-28px -28px transparent, 0 -28px transparent, 28px -28px transparent, -28px 0 transparent, 28px 0, -28px 28px, 0 28px, 28px 28px;
-    background-color:#fff;
+    background-color:$back-white;
   }
   75%{
     box-shadow:-28px -28px transparent, 0 -28px transparent, 28px -28px transparent, -28px 0 transparent, 28px 0, -28px 28px, 0 28px, 28px 28px;
