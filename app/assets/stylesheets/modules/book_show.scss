@@ -85,22 +85,4 @@
     color: $text-black;
     line-height: 60px;
   }
-
-  .book-comment {
-    width: 700px;
-    padding-top: 40px;
-    padding-bottom: 15px;
-    margin: 0 auto;
-    background-color: $back-white;
-    &__area {
-    width: calc(100% - 60px);
-    margin: 0 auto;
-    padding: 10px;
-    border: 2px solid #ffe7e7;
-    border-radius: 4px;
-    color: #636363;
-    font-size: 17px;
-    margin-bottom: 20px;
-    }
-  }
 }
