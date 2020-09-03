@@ -1,9 +1,26 @@
 .container {
-  .comment-box {
-
-  }
-  .comment-submit {
-
+  .comment-send {
+    display: flex;
+    justify-content: center;
+    .comment-box {
+      width: 550px;
+      height: 40px;
+      resize: vertical;
+      border: 1px solid $form-border;
+      border-radius: 4px;
+      margin: 25px 5px 25px 0;
+      padding: 9px;
+    }
+    .comment-submit {
+      width: 100px;
+      height: 40px;
+      border-radius: 4px;
+      border: 1px solid $submit-border;
+    }
+    .comment-box:focus {
+      border: 2px solid $focus-border;
+      outline: 0;
+    }
   }
   .not-user {
     text-align: center;

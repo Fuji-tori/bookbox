@@ -38,8 +38,9 @@
 .container
   - if current_user
     = form_with(model: [@book, @comment], local: true, id: "new_comment") do |form|
-      = form.text_area :text, placeholder: "コメントする" , rows: "2", class: "comment-box"
-      = form.submit "送信", class: "comment-submit"
+      .comment-send
+        = form.text_area :text, placeholder: "コメントする" , rows: "2", class: "comment-box"
+        = form.submit "送信", class: "comment-submit"
   - else
     %strong
       %p.not-user
