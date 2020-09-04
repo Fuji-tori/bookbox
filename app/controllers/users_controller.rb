@@ -5,7 +5,7 @@ class UsersController < ApplicationController
     @nickname = current_user.nickname
     @books = current_user.books
   end
-  
+
   def edit
   end
 

@@ -5,10 +5,16 @@
     タイトル
   .book-sh__name
     = @book.book_name
+    %span.book-sh__username
+      %a{:href => "/users/#{@book.user.id}"}
+        %span.book-sh__usertitle
+          投稿者:
+          .book-sh__usernick
+            = @book.user.nickname
   .book-sh__image
     = image_tag "/public/uploads/book/image/#{@book.image}", size: "210x280"
   .book-sh__table
-    %ul.book-data__list
+    %ul.book-data__list.bold
       %li.data-list
         著者
       %li.data-list

@@ -30,6 +30,17 @@
     line-height: 45px;
     font-size: 30px;
     font-weight: 650;
+    a {
+      display: flex;
+      .book-sh__usertitle {
+        display: flex;
+        font-size: 14px;
+        .book-sh__usernick {
+          font-size: 16px;
+          padding-left: 3px;
+        }
+      }
+    }
   }
 
   .book-sh__image {
@@ -74,15 +85,17 @@
     border: 1px solid $thin-border;
     color: $text-black;
     line-height: 60px;
+    table-layout: fixed;
   }
 
   .detail-list__long {
     height: 200px;
     width: 460px;
-    padding-left: 10px;
+    padding: 10px;
     background-color: $back-white;
     border: 1px solid $thin-border;
     color: $text-black;
-    line-height: 60px;
+    line-height: 23px;
+    overflow-wrap : break-word;
   }
 }
