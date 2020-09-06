@@ -30,15 +30,16 @@
     line-height: 45px;
     font-size: 30px;
     font-weight: 650;
-    a {
+    .book-sh__usertitle {
+      height: 20px;
+      width: 15%;
       display: flex;
-      .book-sh__usertitle {
-        display: flex;
-        font-size: 14px;
-        .book-sh__usernick {
-          font-size: 16px;
-          padding-left: 3px;
-        }
+      font-size: 14px;
+      color: #7c7c7c;
+      .book-sh__usernick {
+        font-size: 16px;
+        color: $text-black;
+        padding-left: 3px;
       }
     }
   }
@@ -51,7 +52,6 @@
     background-position: center;
     border-radius: 3px;
     margin: 10px 10px 2px;
-    border-radius: 3%;
     margin: 0 auto;
   }
 
