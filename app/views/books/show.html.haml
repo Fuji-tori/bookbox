@@ -5,10 +5,10 @@
     タイトル
   .book-sh__name
     = @book.book_name
-    %span.book-sh__usertitle
+    .book-sh__usertitle
       投稿者:
-      %a{href: "/users/#{@book.user.id}"}
-        .book-sh__usernick
+      .book-sh__usernick
+        = link_to users_show_path(@book.user.id) do
           = @book.user.nickname
   .book-sh__image{style: "background-image: url(#{@book.image});"}
   .book-sh__table
