@@ -1,26 +1,26 @@
 - @books.each do |book|
   .content-post__box
-    .content-post{style: "background-image: url(#{book.image});"}
-    .content-post__list
-      %ul.content-post__left
-        %li.post-left.bold
-          タイトル
-        %li.post-left__long.bold
-          ジャンル
-        %li.post-left.bold
-          著者
-      %ul.content-post__right
-        %li.post-right
-          = link_to book_path(book.id) do
+    = link_to book_path(book.id) do
+      .content-post{style: "background-image: url(#{book.image});"}
+      .content-post__list
+        %ul.content-post__left
+          %li.post-left.bold
+            タイトル
+          %li.post-left__long.bold
+            ジャンル
+          %li.post-left.bold
+            著者
+        %ul.content-post__right
+          %li.post-right
             = simple_format(book.book_name)
-        %li.post-right__long
-          .post-right__genre
-            = "#{book.book_genre.parent.parent.name}" 
-          .post-right__genre
-            %span{style: "color: #8e8e8e"} >
-            = "#{book.book_genre.parent.name}"
-          .post-right__genre
-            %span{style: "color: #8e8e8e"} >
-            = "#{book.book_genre.name}"
-        %li.post-right
-          = book.author
+          %li.post-right__long
+            .post-right__genre
+              = "#{book.book_genre.parent.parent.name}" 
+            .post-right__genre
+              %span{style: "color: #8e8e8e"} >
+              = "#{book.book_genre.parent.name}"
+            .post-right__genre
+              %span{style: "color: #8e8e8e"} >
+              = "#{book.book_genre.name}"
+          %li.post-right
+            = book.author
