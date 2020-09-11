@@ -3,7 +3,7 @@ class CommentsController < ApplicationController
   def create
     @comment = Comment.create(comment_params)
     respond_to do |format|
-      format.html { redirect_to tweet_path(params[:book_id]) }
+      format.html { redirect_to book_path(params[:book_id]) }
       format.json
     end
   end

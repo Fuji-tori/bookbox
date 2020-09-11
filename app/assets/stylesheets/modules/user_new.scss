@@ -28,7 +28,7 @@
   }
   &--for {
     width: 350px;
-    margin: 0 auto;
+    padding: 30px;
     .nickname-field {
       margin-top: 40px;
       &__text {
@@ -125,7 +125,7 @@ a {
 .require {
   margin-left: 8px;
   color: $text-white;
-  background-color: red;
+  background-color: #f10000;
   padding: 2px 4px;
   font-size: 15px;
   vertical-align: top;
