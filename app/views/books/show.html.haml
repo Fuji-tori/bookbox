@@ -57,8 +57,9 @@
         - @comments.each do |comment|
           %p.comment-user_ni
             %strong
-              = link_to comment.user.nickname, "/users/(#{comment.user_id});"
-            = comment.text
+              = link_to comment.user.nickname, "/users/(#{comment.user_id});", class: "comment-user_small"
+            .comment-user_text
+              = comment.text
       - else
         %strong
           %p.no-comment
