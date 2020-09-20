@@ -9,4 +9,12 @@ class UsersController < ApplicationController
   def edit
   end
 
+  def update
+    @user = User.find_by(id: params[:id])
+    if params[:image]
+      @user.image_name = "#{@user.id}.jpg"
+      image = params[:image]
+      File.binwrite("public/user_images/#{@user.image_avatar}",image.read)
+    end
+
 end
