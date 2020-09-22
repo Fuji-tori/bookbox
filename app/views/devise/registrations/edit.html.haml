@@ -34,3 +34,28 @@
 %p
   Unhappy? #{button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete}
 = link_to "Back", :back
+
+-# = form_tag("/users/#{@user.id}/update", {multipart: true}) do
+-#   %p ユーザー名
+-#   %input{name: "name", value: "#{@user.nickname}"}/
+-#   %p 画像
+-#   %input{name: "image", type: "file"}/
+-#   %p メールアドレス
+-#   %input{name: "email", value: "#{@user.email}"}/
+-#   %input{type: "submit", value: "保存"}/
+  -# .field
+  -#   ユーザー名
+  -#   = f.label :nickname
+  -#   %br/
+  -#   = f.nickname_field :nickname, autofocus: true, autocomplete: "ニックネーム", value: "#{@user.nickname}"
+  -# .field
+  -#   画像
+  -#   = f.label :image_avatar
+  -#   %br/
+  -#   = f.image_avatar_field :image_avatar, autofocus: true, autocomplete: "プロフィール画像"
+  -# .field
+  -#   メールアドレス
+  -#   = f.label :email
+  -#   %br/
+  -#   = f.email_field :email, autofocus: true, autocomplete: "メールアドレス", value: "#{@user.email}"
+  -# = f.submit "保存"
