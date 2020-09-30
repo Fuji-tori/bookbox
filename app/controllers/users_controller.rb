@@ -4,6 +4,7 @@ class UsersController < ApplicationController
     redirect_to root_path unless user_signed_in?
     @nickname = current_user.nickname
     @books = current_user.books
+    # @recently_visit = cookies[:book_name].split(',') if cookies[:book_name]
   end
 
   def edit

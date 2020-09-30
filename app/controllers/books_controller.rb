@@ -31,6 +31,7 @@ class BooksController < ApplicationController
   def show
     @comment = Comment.new
     @comments = @book.comments.includes(:user)
+    # @recently_visit = cookies[:book_name].split(',') if cookies[:book_name]
   end
 
   def edit
