@@ -1,0 +1,5 @@
+<!-- Slim -->
+= @recently_visit.nil? ? "閲覧履歴はありません" : @recently.each {|book| book }
+  - @recently_visit.each do |book|
+    = link_to(Product.find_by('product_name=?', book).product_name, product_detail_path(book)) unless @recently.nil?
+      %br/
