@@ -19,6 +19,8 @@
               = link_to comment.user.nickname, "/users/(#{comment.user_id});", class: "comment-user_small"
             .comment-user_text
               = comment.text
+              -# .comment-user_image
+              -#   = link_to comment.user.image_avatar, "/users/(#{comment.user_id});"
       - else
         %strong
           %p.no-comment
