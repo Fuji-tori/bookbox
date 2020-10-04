@@ -73,4 +73,5 @@ gem 'ancestry'
 gem 'jquery-rails'
 gem 'carrierwave'
 gem 'mini_magick'
+
 gem 'js_cookie_rails', '~> 2.2'
