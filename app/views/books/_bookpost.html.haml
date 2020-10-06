@@ -10,6 +10,8 @@
             ジャンル
           %li.post-left.bold
             著者
+          %li.post-left.bold
+           出版
         %ul.content-post__right
           %li.post-right
             = simple_format(book.book_name)
@@ -24,3 +26,8 @@
               = "#{book.book_genre.name}"
           %li.post-right
             = book.author
+          %li.post-right
+            = book.publication
+      .content-user
+        投稿者
+        = @book.user.nickname
