@@ -14,14 +14,14 @@
               %span.require
                 必須
             %br/
-            = f.text_field :book_name
+            = f.text_field :book_name, {include_blank: '100文字以内'}
           .book-author
             .book-author__label.bold
               著者
               %span.require
                 必須
             %br/
-            = f.text_field :author
+            = f.text_field :author, {include_blank: '100文字以内'}
           .book-publication
             .book-publication__label.bold
               出版
@@ -54,21 +54,21 @@
               %span.require
                 必須
             %br/
-            = f.text_area :synopsis, class: "long-field"
+            = f.text_area :synopsis, class: "long-field", {include_blank: '10000文字以内'}
           .book-review
             .book-review__label.bold
               感想
               %span.require
                 必須
             %br/
-            = f.text_area :review, class: "long-field"
+            = f.text_area :review, class: "long-field", {include_blank: '10000文字以内'}
           .book-price
             .book-price__label.bold
               値段
               %span.require
                 必須
             %br/
-            = f.number_field :price, class: "price-field"
+            = f.number_field :price, class: "price-field", {include_blank: '1〜99999999'}
         .btn
           .exhibition_btn
             = f.submit "投稿"
