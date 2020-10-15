@@ -6,6 +6,7 @@
 |nickname|string|null: false|
 |email|string|null: false, unique: true|
 |password|string|null: false|
+|image_avatar|string|
 
 ### Association
 - has_many :books
@@ -16,10 +17,11 @@
 ## booksテーブル
 |Column|Type|Options|
 |------|----|-------|
-|bookname|string|null: false|
+|book_name|string|null: false|
 |author|string|null: false|
-|text|string|null: false|
-|image|text|null: false|
+|publication|string|null: false|
+|image|string|null: false|
+|synopsis|text|null: false|
 |review|text|null: false|
 |genre|string|null: false, foreign_key: true|
 
