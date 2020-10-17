@@ -17,7 +17,7 @@
 #green {
   fill: none;
   opacity: 0.1;
-  stroke: #7bc406;
+  stroke: $bookline-green;
   stroke-width: 12;
   stroke-miterlimit:10;
   animation: show 4s;
@@ -29,7 +29,7 @@
 #light-green {
   fill: none;
   opacity: 0.1;
-  stroke: #7bc406;
+  stroke: $bookline-green;
   stroke-width: 6;
   stroke-miterlimit:10;
   stroke-dasharray: 200;
