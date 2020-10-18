@@ -8,7 +8,7 @@ Rails.application.routes.draw do
       get 'get_genre_grandchildren', defaults: { format: 'json' }
     end
     get :search, on: :collection
-    resources :comments, only: [:create]
+    resources :comments, only: :create
   end
   resources :users, only: [:show, :edit]
 end
