@@ -23,7 +23,7 @@
   .book-newpost{
     padding: 20px;
     margin-bottom: 20px;
-    border-bottom: solid 1px rgb(226, 226, 226);
+    border-bottom: solid 1px #e2e2e2;
     text-align: center;
     font-size: 25px;
   }
@@ -47,7 +47,7 @@
   }
   .book_name {
     padding: 40px;
-    border-bottom: solid 1px rgb(245, 245, 245);
+    border-bottom: solid 1px $header-text;
     &__form {
       margin-bottom: 20px;
     }
