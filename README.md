@@ -1,12 +1,12 @@
 # README
 
 ## usersテーブル
-|Column|Type|Options|
-|------|----|-------|
-|nickname|string|null: false|
-|email|string|null: false, unique: true|
-|password|string|null: false|
-|image_avatar|string|
+|Column      |Type  |Options    |
+|------------|------|-----------|
+|nickname    |string|null: false|
+|email       |string|null: false, unique: true|
+|password    |string|null: false|
+|image_avatar|string||
 
 ### Association
 - has_many :books
@@ -15,15 +15,15 @@
 
 
 ## booksテーブル
-|Column|Type|Options|
-|------|----|-------|
-|book_name|string|null: false|
-|author|string|null: false|
+|Column     |Type  |Options    |
+|-----------|------|-----------|
+|book_name  |string|null: false|
+|author     |string|null: false|
 |publication|string|null: false|
-|image|string|null: false|
-|synopsis|text|null: false|
-|review|text|null: false|
-|genre|string|null: false, foreign_key: true|
+|image      |string|null: false|
+|synopsis   |text  |null: false|
+|review     |text  |null: false|
+|genre      |string|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
@@ -33,11 +33,11 @@
 
 ## book_genresテーブル
 
-|Column|Type|Options|
-|------|----|-------|
-|name|string|null: false, index: true|
-|book|references|foreign_key: true|
-|ancestry|string|
+|Column  |Type      |Options    |
+|--------|----------|-----------|
+|name    |string    |null: false, index: true|
+|book    |references|foreign_key: true|
+|ancestry|string    ||
 
 ### Association
 
@@ -45,10 +45,10 @@
 
 
 ## bookmarksテーブル
-|Column|Type|Options|
-|------|----|-------|
-|user|references|foreign_key: true, null: false|
-|book|references|foreign_key: true, null: false|
+|Column|Type      |Options    |
+|------|----------|-----------|
+|user  |references|foreign_key: true, null: false|
+|book  |references|foreign_key: true, null: false|
 
 ### Association
 - belongs_to :user
@@ -56,11 +56,11 @@
 
 
 ## commentsテーブル
-|Column|Type|Options|
-|------|----|-------|
-|user|references|foreign_key: true, null: false|
-|book|references|foreign_key: true, null: false|
-|text|text|null: false|
+|Column|Type      |Options    |
+|------|----------|-----------|
+|user  |references|foreign_key: true, null: false|
+|book  |references|foreign_key: true, null: false|
+|text  |text      |null: false|
 
 ### Association
 - belongs_to :user
