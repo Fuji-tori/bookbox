@@ -133,6 +133,7 @@ legend {
 #yui3-css-stamp.cssreset { display: none; }
 
 /* sass */
+
 $thick-border: #ffdede;
 $thin-border: #ffe5e5;
 
@@ -152,5 +153,6 @@ $submit-border: #ff8080;
 $back-white: white;
 $footer-pink: #ee8888;
 
-$backline-green: #7bc406;
-$backline-yellow: #cecb1b;
+/* backline.scss */
+$line-yellow: #cecb1b;
+$line-green: #7bc406;

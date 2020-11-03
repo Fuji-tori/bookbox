@@ -5,7 +5,7 @@
 #yellow {
   fill: none;
   opacity: 0.1;
-  stroke: $backline-yellow;
+  stroke: $line-yellow;
   stroke-width: 12;
   stroke-miterlimit:10;
   animation: show 4s;
@@ -17,7 +17,7 @@
 #green {
   fill: none;
   opacity: 0.1;
-  stroke: $bookline-green;
+  stroke: $line-green;
   stroke-width: 12;
   stroke-miterlimit:10;
   animation: show 4s;
@@ -29,7 +29,7 @@
 #light-green {
   fill: none;
   opacity: 0.1;
-  stroke: $backline-green;
+  stroke: $line-green;
   stroke-width: 6;
   stroke-miterlimit:10;
   stroke-dasharray: 200;
