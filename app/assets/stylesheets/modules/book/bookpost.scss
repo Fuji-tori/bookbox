@@ -68,5 +68,15 @@
         color: $text-black;
       }
     }
+    .content-user {
+      text-align: center;
+      padding-bottom: 10px;
+      &__name {
+        margin: 0 auto;
+        width: calc(100% - 30px);
+        border: 2px solid $thin-border;
+        border-radius: 10px;
+      }
+    }
   }
 }
