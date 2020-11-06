@@ -30,6 +30,40 @@
     padding: 35px 0 0;
   }
 
+  .comment-userlog {
+    margin-top: 22px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    border-bottom: 3px solid #ff3535;
+    &__login{
+      margin-right: 50px;
+      a{
+        text-decoration: none;
+        color: $header-text;
+        background: radial-gradient(#ff9696, #ff3535);
+        padding: 13px;
+        border-radius: 10px;
+      }
+    }
+    &__login:hover {
+      transform: translateY(-0.1875em);
+    }
+    &__new{
+      a{
+        text-decoration: none;
+        color: $header-text;
+        background: radial-gradient(#ff9696, #ff3535);
+        padding: 13px;
+        border-radius: 10px;
+      }
+    }
+    &__new:hover {
+      transform: translateY(-0.1875em);
+    }
+  }
+
   .book-comment {
     width: 700px;
     color: $text-black;
