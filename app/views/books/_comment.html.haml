@@ -8,8 +8,9 @@
     %strong
       %p.not-user
         ※※※ コメントの投稿には 新規登録 又は ログイン が必要です ※※※
-        %br/
-        ↓より新規登録又はログインが可能です
+        %br
+          .not-user__2
+            ↓より新規登録又はログインが可能です
       %ul.comment-userlog
         %li.comment-userlog__login
           = link_to new_user_session_path do
@@ -29,7 +30,7 @@
             .comment-user_text
               = comment.text
               .comment-user_image
-                = link_to comment.user.image_avatar, "/users/(#{comment.user_id});"
+                = comment.user.image_avatar
       - else
         %strong
           %p.no-comment

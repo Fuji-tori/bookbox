@@ -28,15 +28,21 @@
     color: #f15252;
     font-size: 16px;
     padding: 35px 0 0;
+    &__2 {
+      margin-top: 7px;
+      text-align: center;
+      color: #f15252;
+      font-size: 16px;
+    }
   }
 
   .comment-userlog {
-    margin-top: 22px;
+    margin-top: 24px;
     font-size: 20px;
     display: flex;
     justify-content: center;
-    height: 35px;
-    border-bottom: 3px solid #ff3535;
+    height: 37px;
+    border-bottom: 3px solid #ff7f7f;
     &__login{
       margin-right: 50px;
       a{
