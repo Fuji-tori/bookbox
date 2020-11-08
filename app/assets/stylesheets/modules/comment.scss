@@ -48,7 +48,7 @@
       a{
         text-decoration: none;
         color: $header-text;
-        background: radial-gradient(#ff9696, #ff3535);
+        background: radial-gradient($btn-pink, $btn-red);
         padding: 13px;
         border-radius: 10px;
       }
@@ -60,7 +60,7 @@
       a{
         text-decoration: none;
         color: $header-text;
-        background: radial-gradient(#ff9696, #ff3535);
+        background: radial-gradient($btn-pink, $btn-red);
         padding: 13px;
         border-radius: 10px;
       }

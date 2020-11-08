@@ -56,7 +56,7 @@
 a {
   .post-btn {
     width: 120px;
-    background: radial-gradient(#ff9696, #ff3535);
+    background: radial-gradient($btn-pink, $btn-red);
     text-align: center;
     border-radius: 30%;
     bottom: 32px;
