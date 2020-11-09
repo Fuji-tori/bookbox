@@ -25,13 +25,13 @@
   }
   .not-user {
     text-align: center;
-    color: #f15252;
+    color: $notuser-text;
     font-size: 16px;
     padding: 35px 0 0;
     &__2 {
       margin-top: 7px;
       text-align: center;
-      color: #f15252;
+      color: $notuser-text;
       font-size: 16px;
     }
   }
