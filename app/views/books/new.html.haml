@@ -47,7 +47,6 @@
                   %i.far.fa-image
                     選択
                   = f.file_field :image
-
           .book-synopsis
             .book-synopsis__label.bold
               あらすじ
@@ -69,6 +68,7 @@
                 必須
             %br/
             = f.number_field :price, class: "price-field", {include_blank: '1〜99999999'}
+        
         .btn
           .exhibition_btn
             = f.submit "投稿"
