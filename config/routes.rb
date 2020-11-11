@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  
   devise_for :users
   get 'users/show'
   root to: 'books#index'
@@ -13,5 +14,5 @@ Rails.application.routes.draw do
   end
 
   resources :users, only: [:show, :edit]
-  
+
 end
