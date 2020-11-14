@@ -42,7 +42,7 @@
     display: flex;
     justify-content: center;
     height: 37px;
-    border-bottom: 3px solid #ff7f7f;
+    border-bottom: 2px solid #ff7f7f;
     &__login{
       margin-right: 50px;
       a{
@@ -84,18 +84,21 @@
     color: $text-black;
     font-size: 17px;
     margin-bottom: 20px;
-    .comment-user_ni {
+    .comment-user__box {
       margin: 20px 5px 10px;
-      color: $text-black;
-      .comment-user_small {
-        font-size: 14px;
-        background-color: $item-back;
-        padding: 5px;
-        border-radius: 4px;
+    }
+    .comment-user__image {
+      background-color: $image-back;
+      height: 45px;
+      width: 45px;
+      .comment-user__small {
+        font-size: 12px;
+        color: $text-gray;
       }
     }
-    .comment-user_text {
-      margin-left: 10px;
+    .comment-user__text {
+      color: $text-black;
+      margin: 5px 0 0 10px;
       padding-left: 5px;
       border-left: 2px solid $form-border;
     }

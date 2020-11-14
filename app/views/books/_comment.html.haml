@@ -24,13 +24,13 @@
     .book-comment__area
       - if @comments
         - @comments.each do |comment|
-          %p.comment-user_ni
-            %strong
-              = link_to comment.user.nickname, "/users/(#{comment.user_id});", class: "comment-user_small"
-            .comment-user_text
+          %p.comment-user__box
+            .comment-user__image
+              = comment.user.image_avatar
+              .comment-user__small
+                = link_to comment.user.nickname, "/users/(#{comment.user_id});", class: "comment-user__small"
+            .comment-user__text
               = comment.text
-              .comment-user_image
-                = comment.user.image_avatar
       - else
         %strong
           %p.no-comment
