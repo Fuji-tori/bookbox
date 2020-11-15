@@ -27,8 +27,10 @@
           %p.comment-user__box
             .comment-user__image
               = comment.user.image_avatar
-              .comment-user__small
-                = link_to comment.user.nickname, "/users/(#{comment.user_id});", class: "comment-user__small"
+              .comment-user__kari
+                no image
+            .comment-user__ni
+              = link_to comment.user.nickname, "/users/(#{comment.user_id});", class: "comment-user__small"
             .comment-user__text
               = comment.text
       - else

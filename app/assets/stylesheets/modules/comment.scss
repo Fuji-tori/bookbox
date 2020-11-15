@@ -86,15 +86,25 @@
     margin-bottom: 20px;
     .comment-user__box {
       margin: 20px 5px 10px;
+      display: flex;
     }
     .comment-user__image {
-      background-color: $image-back;
+      background-color: $item-back;
       height: 45px;
       width: 45px;
-      .comment-user__small {
-        font-size: 12px;
+      border-radius: 10px;
+      /* 仮置き */
+      .comment-user__kari {
+        font-size: 5px;
         color: $text-gray;
       }
+    }
+    .comment-user__small {
+      padding: 2px;
+      font-size: 12px;
+      color: $text-gray;
+      border: 1px solid $form-border;
+      border-radius: 5px;
     }
     .comment-user__text {
       color: $text-black;
