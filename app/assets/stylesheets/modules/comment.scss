@@ -1,72 +1,77 @@
 .container {
-  .comment-send {
-    display: flex;
-    justify-content: center;
-    .comment-box {
-      width: 550px;
-      height: 40px;
-      min-height: 40px;
-      resize: vertical;
-      border: 1px solid $form-border;
-      border-radius: 4px;
-      margin: 25px 5px 25px 0;
-      padding: 9px;
+  .container-user {
+    border: 2px solid #ff7f7f;
+    border-radius: 10px;
+    padding-bottom: 35px;
+    margin: 10px;
+    .comment-send {
+      display: flex;
+      justify-content: center;
+      .comment-box {
+        width: 550px;
+        height: 40px;
+        min-height: 40px;
+        resize: vertical;
+        border: 1px solid $form-border;
+        border-radius: 4px;
+        margin: 25px 5px 25px 0;
+        padding: 9px;
+      }
+      .comment-submit {
+        width: 100px;
+        height: 40px;
+        border-radius: 4px;
+        border: 1px solid $submit-border;
+      }
+      .comment-box:focus {
+        border: 2px solid $focus-border;
+        outline: 0;
+      }
     }
-    .comment-submit {
-      width: 100px;
-      height: 40px;
-      border-radius: 4px;
-      border: 1px solid $submit-border;
-    }
-    .comment-box:focus {
-      border: 2px solid $focus-border;
-      outline: 0;
-    }
-  }
-  .not-user {
-    text-align: center;
-    color: $notuser-text;
-    font-size: 16px;
-    padding: 35px 0 0;
-    &__2 {
-      margin-top: 7px;
+    .not-user {
       text-align: center;
       color: $notuser-text;
       font-size: 16px;
+      padding-top: 35px;
+      &__2 {
+        margin-top: 7px;
+        text-align: center;
+        color: $notuser-text;
+        font-size: 16px;
+      }
     }
-  }
 
-  .comment-userlog {
-    margin-top: 24px;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    height: 37px;
-    border-bottom: 2px solid #ff7f7f;
-    &__login{
-      margin-right: 50px;
-      a{
-        text-decoration: none;
-        color: $header-text;
-        background: radial-gradient($btn-pink, $btn-red);
-        padding: 13px;
-        border-radius: 10px;
+    .comment-userlog {
+      margin-top: 24px;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      height: 37px;
+      &__login{
+        margin-right: 50px;
+        a{
+          text-decoration: none;
+          color: $header-text;
+          background: radial-gradient($btn-pink, $btn-red);
+          padding: 13px;
+          border-radius: 10px;
+        }
       }
-    }
-    &__login:hover {
-      transform: translateY(-0.1875em);
-    }
-    &__new{
-      a{
-        text-decoration: none;
-        color: $header-text;
-        background: radial-gradient($btn-pink, $btn-red);
-        padding: 13px;
-        border-radius: 10px;
+      &__login:hover {
+        transform: translateY(-0.1875em);
       }
-    }
-    &__new:hover {
-      transform: translateY(-0.1875em);
+      &__new{
+        a{
+          text-decoration: none;
+          color: $header-text;
+          background: radial-gradient($btn-pink, $btn-red);
+          padding: 13px;
+          border-radius: 10px;
+        }
+      }
+      &__new:hover {
+        transform: translateY(-0.1875em);
+      }
     }
   }
 
