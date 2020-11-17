@@ -82,6 +82,10 @@
     margin: 0 auto;
     background-color: $back-white;
     font-size: 15px;
+    &__titel {
+      border-bottom: 3px dotted $form-border;
+      padding-bottom: 10px;
+    }
     &__area {
     width: calc(100% - 60px);
     margin: 0 auto;
@@ -90,7 +94,7 @@
     font-size: 17px;
     margin-bottom: 20px;
     .comment-user__box {
-      margin: 20px 5px 10px;
+      margin: 10px 5px 10px;
       display: flex;
     }
     .comment-user__image {
@@ -114,8 +118,9 @@
     .comment-user__text {
       color: $text-black;
       margin: 5px 0 0 10px;
-      padding-left: 5px;
-      border-left: 2px solid $form-border;
+      padding: 0 0 5px 5px;
+      border-left: 3px double $form-border;
+      border-bottom: 1px dotted $form-border;
     }
       .no-comment {
         color: #636363;
