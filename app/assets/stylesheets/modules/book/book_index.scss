@@ -20,10 +20,12 @@
         background: -moz-linear-gradient(top, $back-white, $image-back);
         background: -webkit-linear-gradient(top, $back-white, $image-back);
         background: linear-gradient(to bottom, $back-white, $image-back);
+        border-radius: 10px;
         .top-image {
           width: 150px;
           margin: 0 auto;
           line-height: 120px;
+          border-radius: 10px;
         }
       }
       .top-handling__sub{
@@ -99,6 +101,9 @@ footer {
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
+    border: 2px solid #ffc0c0;
+    border-radius: 20px;
+    padding: 10px;
     a {
       color: $text-white;
     }
