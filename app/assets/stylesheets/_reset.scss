@@ -9,8 +9,8 @@
     TODO with the prefix, should I group by selector or property for weight savings?
 */
 html{
-  color:#000;
-  background:#FFF;
+  color: $normal-black;
+  background: $normal-white;
 }
 
 /*
@@ -126,7 +126,7 @@ select {
 
 /*because legend doesn't inherit in IE */
 legend {
-  color:#000;
+  color:$normal-black;
 }
 
 /* YUI CSS Detection Stamp */
@@ -137,6 +137,8 @@ legend {
 $thick-border: #ffdede;
 $thin-border: #ffe5e5;
 /* text */
+$normal-black: #000;
+$normal-white: #fff;
 $text-black: #484848;
 $text-gray: #6d6d6d;
 $text-white: #fff;
@@ -157,12 +159,11 @@ $btn-pink: #ff9696;
 $btn-red: #ff3535;
 /* その他 */
 $footer-pink: #ee8888;
-
 /* backline.scss */
 $line-yellow: #cecb1b;
 $line-green: #7bc406;
 
-/*
+/*one-colors
   header     #e3e3e3,#ff4b4b
   book_show  #a8a8a8,#7c7c7c,#ffe0e0
   book_index #ffc0c0
