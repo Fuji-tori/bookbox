@@ -8,8 +8,13 @@
     TODO will need to remove settings on HTML since we can't namespace it.
     TODO with the prefix, should I group by selector or property for weight savings?
 */
+/* sass-normal */
+$normal-black: #000;
+$normal-white: #fff;
+/**/
+
 html{
-  color: $normal-black;
+  color: #000;
   background: $normal-white;
 }
 
@@ -137,13 +142,12 @@ legend {
 $thick-border: #ffdede;
 $thin-border: #ffe5e5;
 /* text */
-$normal-black: #000;
-$normal-white: #fff;
 $text-black: #484848;
 $text-gray: #6d6d6d;
 $text-white: #fff;
 $header-text: #f5f5f5;
 $notuser-text: #f15252;
+  /* ↑normal */
 /* back */
 $item-back: #ffefef;
 $detail-back: #fff6f6;
