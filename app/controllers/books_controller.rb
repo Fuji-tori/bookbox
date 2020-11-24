@@ -40,11 +40,11 @@ class BooksController < ApplicationController
   end
 
   def search
-    if params[:book_name].present?
-      @books = Book.where('book_name LIKE ?', "%#{params[:book_name]}%")
-    else
-      @books = Book.none
-    end
+    # if params[:book_name].present?
+    @books = Book.where('book_name LIKE ?', "%#{params[:book_name]}%")
+    # else
+    #   @books = Book.none
+    # end
   end
 
   private
