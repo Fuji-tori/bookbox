@@ -27,7 +27,7 @@
     text-align: center;
     font-size: 25px;
   }
-  
+
   input {
     width: 100%;
     height: 48px;
@@ -57,18 +57,13 @@
     &__label {
       margin-top: 20px;
     }
-    .book-author {
+    .book-author,
+    .book-publication {
       margin-bottom: 20px;
       &__label{
         margin-top: 20px;
       } 
     }   
-    .book-publication {
-      margin-bottom: 20px;
-      &__label {
-        margin-top: 20px;
-      }
-    }
   }
 
   .listing-book-detail__genre{
@@ -87,14 +82,8 @@
     }
   }
 
-  .listing-book-detail__genre:focus {
-    border: 3px solid $input-border;
-    outline: 0;
-  }
-  .listing-select-wrapper:focus {
-    border: 3px solid $input-border;
-    outline: 0;
-  }
+  .listing-book-detail__genre:focus,
+  .listing-select-wrapper:focus,
   .listing-select-wrapper__box--select:focus {
     border: 3px solid $input-border;
     outline: 0;
@@ -172,10 +161,7 @@
     }
   }
 
-  .long-field:focus {
-    border: 3px solid $focus-border;
-    outline: 0;
-  }
+  .long-field:focus,
   .price-field:focus {
     border: 3px solid $focus-border;
     outline: 0;

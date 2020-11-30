@@ -90,25 +90,19 @@
         }
         .list-right{
           display: flex;
-          &__login{
+          &__login,
+          &__new {
             margin-right: 30px;
             a{
               text-decoration: none;
               color: $header-text;
             }
           }
-          &__login:hover {
-            transform: translateY(-0.1875em);
-          }
-          &__new{
-            a{
-              text-decoration: none;
-              color: $header-text;
-            }
-          }
+          &__login:hover,
           &__new:hover {
             transform: translateY(-0.1875em);
           }
+
           &__mypage {
             a {
               color: $header-text;
@@ -117,6 +111,7 @@
           &__mypage:hover {
             transform: translateY(-0.1875em);
           }
+          
           &__logout {
             margin-right: 30px;
             a{
