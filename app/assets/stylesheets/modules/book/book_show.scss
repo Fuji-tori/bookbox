@@ -42,6 +42,9 @@
         color: $text-black;
         padding-left: 3px;
       }
+      .book-sh__usernick:hover {
+        opacity: 0.6;
+      }
     }
   }
 
@@ -60,7 +63,7 @@
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    background-color: #ffe0e0;
+    background-color: #ffeee0;
     border: 1px solid $form-border;
     border-radius: 4px;
   }

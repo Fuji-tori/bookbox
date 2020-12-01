@@ -1,6 +1,6 @@
 .container {
   .container-user {
-    border: 2px solid #ff7f7f;
+    border: 2px solid #ffa87f;
     border-radius: 10px;
     padding-bottom: 35px;
     margin: 10px;
@@ -52,7 +52,7 @@
         a{
           text-decoration: none;
           color: $header-text;
-          background: radial-gradient($btn-pink, $btn-red);
+          background: radial-gradient($btn-pinksalmon, $btn-orange);
           padding: 13px;
           border-radius: 10px;
         }
@@ -64,7 +64,7 @@
         a{
           text-decoration: none;
           color: $header-text;
-          background: radial-gradient($btn-pink, $btn-red);
+          background: radial-gradient($btn-pinksalmon, $btn-orange);
           padding: 13px;
           border-radius: 10px;
         }

@@ -146,35 +146,35 @@ $text-black: #484848;
 $text-gray: #6d6d6d;
 $text-white: #fff;
 $header-text: #f5f5f5;
-$notuser-text: #f15252;
+$notuser-text: #f19252;
   /* ↑normal */
 /* back */
-$item-back: #ffefef;
-$detail-back: #fff6f6;
-$image-back: #ffb8b8;
+$item-back: #fff5ef;
+$detail-back: #fff9f6;
+$image-back: #ffd7b8;
 $back-white: white;
 /* form */
-$input-border: #ffd2d2;
-$focus-border: #ff6565;
-$form-border: #ffd4d4;
-$submit-border: #ff8080;
+$input-border: #ffe3d2;
+$focus-border: #ffaf65;
+$form-border: #ffead4;
+$submit-border: #ffc280;
 /* btn */
-$btn-pink: #ff9696;
-$btn-red: #ff3535;
+$btn-pinksalmon: #ffbb96;
+$btn-orange: #ff8d35;
 /* その他 */
-$footer-pink: #ee8888;
+$footer-pink: #eeb688;
 /* backline.scss */
 $line-yellow: #cecb1b;
 $line-green: #7bc406;
 
 /*one-colors
-  header     #e3e3e3,#ff4b4b
-  book_show  #a8a8a8,#7c7c7c,#ffe0e0
-  book_index #ffc0c0
+  header     #e3e3e3,#ff934b
+  book_show  #a8a8a8,#7c7c7c,#ffeee0
+  book_index #ffdcc0
   book_new   #e2e2e2
-  user_new   #f10000,lightgray,#0099e8
-  user_show  #d6d6d6,#808080,#fff7f7,#fffafa,#cecece
-  comment    #ff7f7f,#636363
-  time_box   #ffe1da
-  wave_box   #f0f4c3,#aaff00,#ffb700,#ffc8c8
+  user_new   #f10000,lightgray,#e85d00
+  user_show  #d6d6d6,#808080,#fffaf7,#fffcfa,#cecece
+  comment    #ffa87f,#636363
+  time_box   #ffe9da
+  wave_box   #f0f4c3,#aaff00,#ffb700,#ffe0c8
 */

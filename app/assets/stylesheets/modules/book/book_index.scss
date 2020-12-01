@@ -58,7 +58,7 @@
 a {
   .post-btn {
     width: 120px;
-    background: radial-gradient($btn-pink, $btn-red);
+    background: radial-gradient($btn-pinksalmon, $btn-orange);
     text-align: center;
     border-radius: 30%;
     bottom: 32px;
@@ -101,7 +101,7 @@ footer {
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
-    border: 2px solid #ffc0c0;
+    border: 2px solid #ffdcc0;
     border-radius: 20px;
     padding: 10px;
     a {
