@@ -98,26 +98,20 @@
               color: $header-text;
             }
           }
-          &__login:hover,
-          &__new:hover {
-            transform: translateY(-0.1875em);
-          }
-
           &__mypage {
             a {
               color: $header-text;
             }
           }
-          &__mypage:hover {
-            transform: translateY(-0.1875em);
-          }
-          
           &__logout {
             margin-right: 30px;
             a{
               color: $header-text;
             }
           }
+          &__login:hover,
+          &__new:hover,
+          &__mypage:hover,
           &__logout:hover {
             transform: translateY(-0.1875em);
           }
