@@ -14,7 +14,7 @@ $normal-white: #fff;
 /**/
 
 html{
-  color: #000;
+  color: $normal-black;
   background: $normal-white;
 }
 
@@ -139,8 +139,8 @@ legend {
 
 /* sass */
 /* border */
-$thick-border: #ffdede;
-$thin-border: #ffe5e5;
+$thick-border: #ffecde;
+$thin-border: #fff0e5;
 /* text */
 $text-black: #484848;
 $text-gray: #6d6d6d;
@@ -167,7 +167,7 @@ $footer-pink: #eeb688;
 $line-yellow: #cecb1b;
 $line-green: #7bc406;
 
-/*one-colors
+/*one-colors,cssFile
   header     #e3e3e3,#ff934b
   book_show  #a8a8a8,#7c7c7c,#ffeee0
   book_index #ffdcc0
