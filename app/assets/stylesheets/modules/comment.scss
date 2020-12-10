@@ -4,6 +4,7 @@
     border-radius: 10px;
     padding-bottom: 35px;
     margin: 10px;
+
     .comment-send {
       display: flex;
       justify-content: center;
@@ -28,6 +29,7 @@
         outline: 0;
       }
     }
+
     .not-user {
       text-align: center;
       color: $notuser-text;
@@ -47,7 +49,9 @@
       display: flex;
       justify-content: center;
       height: 37px;
-      &__login{
+
+      &__login,
+      &__new {
         margin-right: 50px;
         a{
           text-decoration: none;
@@ -57,18 +61,7 @@
           border-radius: 10px;
         }
       }
-      &__login:hover {
-        transform: translateY(-0.1875em);
-      }
-      &__new{
-        a{
-          text-decoration: none;
-          color: $header-text;
-          background: radial-gradient($btn-pinksalmon, $btn-orange);
-          padding: 13px;
-          border-radius: 10px;
-        }
-      }
+      &__login:hover,
       &__new:hover {
         transform: translateY(-0.1875em);
       }
@@ -93,10 +86,12 @@
     color: $text-black;
     font-size: 17px;
     margin-bottom: 20px;
+
     .comment-user__box {
       margin: 10px 5px 10px;
       display: flex;
     }
+
     .comment-user__image {
       background-color: $item-back;
       height: 45px;
@@ -108,6 +103,7 @@
         color: $text-gray;
       }
     }
+
     .comment-user__small {
       padding: 2px;
       font-size: 12px;
@@ -115,6 +111,7 @@
       border: 1px solid $form-border;
       border-radius: 5px;
     }
+
     .comment-user__text {
       color: $text-black;
       margin: 5px 0 0 10px;
