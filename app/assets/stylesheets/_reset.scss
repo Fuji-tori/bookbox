@@ -14,7 +14,7 @@ $normal-white: #fff;
 /**/
 
 html{
-  color: $normal-black;
+  color:      $normal-black;
   background: $normal-white;
 }
 
@@ -75,7 +75,7 @@ em,
 strong,
 th,
 var {
-  font-style: normal;
+  font-style:  normal;
   font-weight: normal;
 }
 
@@ -118,7 +118,7 @@ input,
 textarea,
 select {
   font-family: inherit;
-  font-size: inherit;
+  font-size:   inherit;
   font-weight: inherit;
 }
 
