@@ -95,7 +95,7 @@
     .comment-user__image {
       background-color: $item-back;
       height: 45px;
-      width: 45px;
+      width:  45px;
       border-radius: 10px;
       /* 仮置き */
       .comment-user__kari {
@@ -119,6 +119,7 @@
       border-left:   3px double $form-border;
       border-bottom: 1px dotted $form-border;
     }
+    
       .no-comment {
         color: #636363;
         font-size: 17px;

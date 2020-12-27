@@ -1,7 +1,7 @@
 .top-handling {
   width: 100%;
   padding: 60px 100px;
-  margin: 30px 0;
+  margin:  30px 0;
   background-color: $back-white;
   display: flex;
   flex-wrap: wrap;
@@ -17,9 +17,9 @@
       padding: 0 10px;
       .top-handling__iamge{
         width: 175px;
-        background: -moz-linear-gradient(top, $back-white, $image-back);
+        background:    -moz-linear-gradient(top, $back-white, $image-back);
         background: -webkit-linear-gradient(top, $back-white, $image-back);
-        background: linear-gradient(to bottom, $back-white, $image-back);
+        background:         linear-gradient(to bottom, $back-white, $image-back);
         border-radius: 10px;
         .top-image {
           width: 150px;
@@ -86,7 +86,7 @@ a {
 
 .footer-line {
   height: 100px;
-  width: 100%;
+  width:  100%;
   background: linear-gradient($back-white, $footer-pink) fixed;
 }
 
@@ -94,11 +94,11 @@ footer {
   background: linear-gradient($back-white, $footer-pink) fixed;
   position: relative;
   height: 100px;
-  width: 100%;
+  width:  100%;
   color: $header-text;
   .footer-item {
     position: absolute;
-    top: 50%;
+    top:  50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     border: 2px solid #ffdcc0;

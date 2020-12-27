@@ -17,7 +17,7 @@
     background: $footer-pink;
     &__inner{
       max-width: 1040px;
-      width: 100%;
+      width:       100%;
       min-height: 82px;
       margin: 0 auto;
       padding: 15px 0 0;
@@ -59,7 +59,7 @@
               border: 3px solid #ff934b;
               border-radius: 15%;
               .search-button {
-                margin: 0;
+                margin:  0;
                 padding: 0;
                 &__image {
                   width: 100%;

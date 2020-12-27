@@ -1,7 +1,7 @@
 .contents {
   background-color: $back-white;
   height: 100%;
-  width: 100%;
+  width:  100%;
   
   .book-sh__page {
     width: 700px;
@@ -33,7 +33,7 @@
     .book-sh__usertitle {
       margin-top: 290px;
       height: 20px;
-      width: 15%;
+      width:  15%;
       display: flex;
       font-size: 14px;
       color: #7c7c7c;
@@ -50,7 +50,7 @@
 
   .book-sh__image {
     height: 300px;
-    width: 225px;
+    width:  225px;
     color: $text-white;
     background-size: cover;
     background-position: center;

@@ -13,23 +13,23 @@
 
 .spinner{
   position: absolute;
-  top: 50%;
+  top:  50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transform-origin: center;
-  width: 120px;
+  width:  120px;
   height: 120px;
   
   span{
     position: absolute;
-    top: 50%;
+    top:  50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 12px;
   }
 
   &.type8{
-    width: 20px;
+    width:  20px;
     height: 20px;
     border-radius: 50%;
     animation:spinner8_1 1.4s infinite linear;

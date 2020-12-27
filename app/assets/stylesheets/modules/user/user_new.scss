@@ -1,12 +1,12 @@
 .blank-content {
-  width: 100%;
+  width:  100%;
   height: 20px;
   background-color: $back-white;
 }
 
 .user-new__form {
   height: 100%;
-  width: 50%;
+  width:   50%;
   background-color: $text-white;
   margin: 0 auto;
   border: 2px solid $form-border;
@@ -46,7 +46,7 @@
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-  width: 100%;
+  width:  100%;
   height: 40px;
   padding: 10px 16px 8px;
   border-radius: 4px;
@@ -60,7 +60,7 @@ input[type="password"]:focus {
 }
 
 input[type="submit"] {
-  width: 100%;
+  width:  100%;
   height: 40px;
   background: radial-gradient($image-back, $footer-pink);
   color: $text-white;
@@ -98,9 +98,9 @@ a {
 }
 
 #link-signin {
+  text-align: center;
   margin-top: 20px;
   padding-bottom: 30px;
-  text-align: center;
   a {
     font-size: 18px;
     color: $text-black;
@@ -111,7 +111,7 @@ a {
   text-align: center;
   margin-top: 20px;
   a {
-    font-size:18px;
+    font-size: 18px;
     color: $text-black;
   }
 }
