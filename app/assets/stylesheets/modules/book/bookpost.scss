@@ -15,8 +15,8 @@
       background-size: cover;
       background-position: center;
       border-radius: 3px;
-      margin: 10px 10px 2px;
       border-radius: 3%;
+      margin: 10px 10px 2px;
       a {
         position: absolute;
         top:  0;
@@ -34,8 +34,8 @@
         padding-left: 10px;
         border: 1px solid $thin-border;
         line-height: 25px;
-        color: $text-black;
         font-size: 12px;
+        color: $text-black;
         background-color: $item-back;
       }
       .post-left__long {
