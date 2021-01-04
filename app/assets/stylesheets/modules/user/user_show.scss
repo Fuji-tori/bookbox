@@ -6,7 +6,7 @@
     background-color: $back-white;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:     center;
     border-bottom: solid 1px $thin-border;
     border-radius: 4px;
     &__image {
@@ -30,7 +30,7 @@
       border-radius: 4px;
       display: flex;
       justify-content: center;
-      align-items: flex-end;
+      align-items:   flex-end;
     }
     &__sub {
       color: #808080;
@@ -44,7 +44,7 @@
     .mypage-post {
       float: right;
       height: 605px;
-      width: 70%;
+      width:  70%;
       background-color: $back-white;
       margin: 10px;	
       &__title {
