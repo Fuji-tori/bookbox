@@ -31,8 +31,8 @@
 - has_many :bookmarks
 - belongs_to :book_genre
 
-## book_genresテーブル
 
+## book_genresテーブル
 |Column  |Type      |Options    |
 |--------|----------|-----------|
 |name    |string    |null: false, index: true|
@@ -40,7 +40,6 @@
 |ancestry|string    ||
 
 ### Association
-
 - has_many :books
 
 
