@@ -6,11 +6,11 @@
   fill: none;
   opacity: 0.1;
   stroke: $line-yellow;
-  stroke-width: 12;
-  stroke-miterlimit:10;
+  stroke-width:      12;
+  stroke-miterlimit: 10;
   animation: show 4s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
+  animation-fill-mode:          forwards;
+  animation-iteration-count:    infinite;
   animation-timing-function: ease-in-out; 
 }
 
@@ -18,11 +18,11 @@
   fill: none;
   opacity: 0.1;
   stroke: $line-green;
-  stroke-width: 12;
-  stroke-miterlimit:10;
+  stroke-width:      12;
+  stroke-miterlimit: 10;
   animation: show 4s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
+  animation-fill-mode:          forwards;
+  animation-iteration-count:    infinite;
   animation-timing-function: ease-in-out;
 }
 
@@ -31,12 +31,12 @@
   opacity: 0.1;
   stroke: $line-green;
   stroke-width: 6;
-  stroke-miterlimit:10;
-  stroke-dasharray: 200;
+  stroke-miterlimit:  10;
+  stroke-dasharray:  200;
   stroke-dashoffset: 800;
   animation: draw 4s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
+  animation-fill-mode:          forwards;
+  animation-iteration-count:    infinite;
   animation-timing-function: ease-in-out;    
 }
 

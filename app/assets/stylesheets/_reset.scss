@@ -8,11 +8,12 @@
     TODO will need to remove settings on HTML since we can't namespace it.
     TODO with the prefix, should I group by selector or property for weight savings?
 */
+
 /* sass-normal */
 $normal-black: #000;
 $normal-white: #fff;
-/**/
 
+/**/
 html{
   color:      $normal-black;
   background: $normal-white;
@@ -25,7 +26,6 @@ html{
   TODO test putting a class on HEAD.
       - Fails on FF.
 */
-
 body,
 div,
 dl,
