@@ -3,6 +3,7 @@
   display:   flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
   .content-post__box {
     border: 2px solid $thick-border;
     border-radius: 3%;
@@ -12,7 +13,7 @@
       height: 300px;
       width:  225px;
       color: $text-white;
-      background-size: cover;
+      background-size:      cover;
       background-position: center;
       border-radius: 3px;
       border-radius: 3%;
@@ -25,6 +26,7 @@
         height: 100%;
       }
     }
+
     .content-post__list {
       display: flex;
       margin: 10px;
@@ -56,6 +58,7 @@
       line-height: 25px;
       background-color: $detail-back;
     }
+
     .post-right__long {
       border: 1px solid $thin-border;
       background-color: $detail-back;
@@ -68,6 +71,7 @@
         color: $text-black;
       }
     }
+
     .content-user {
       text-align: center;
       padding-bottom: 10px;
@@ -78,5 +82,6 @@
         border-radius: 10px;
       }
     }
+
   }
 }
