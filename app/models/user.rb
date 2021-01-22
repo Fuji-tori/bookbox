@@ -15,7 +15,7 @@ class User < ApplicationRecord
   #                 with: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i,
   #                 message: "は正しいメールアドレスを入力して下さい"
   #               }
-         
+
   has_many :books
   has_many :comments
   
