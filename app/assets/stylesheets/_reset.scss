@@ -138,7 +138,6 @@ legend {
 #yui3-css-stamp.cssreset { display: none; }
 
 /* sass */
-/* sass-normalは上に記載 */
 /* border */
 $thick-border:   #ffecde;
 $thin-border:    #fff0e5;
@@ -166,6 +165,10 @@ $footer-pink:    #eeb688;
 /* backline.scss */
 $line-yellow:    #cecb1b;
 $line-green:     #7bc406;
+/* sass-normalの設定は上に記載
+$normal-black: #000;
+$normal-white: #fff;
+*/
 
 /*one-colors,cssFile
   header     #e3e3e3,#ff934b

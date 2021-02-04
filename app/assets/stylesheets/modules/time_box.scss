@@ -1,8 +1,8 @@
 .time-box{
   position: fixed;
-  top: 0;
+  top:  0;
   left: 0;
-  width: 100vw;
+  width:  100vw;
   height: 100vh;
   z-index: 9999;
   -webkit-transition: all 1.2s ease;
@@ -32,9 +32,9 @@
     width:  20px;
     height: 20px;
     border-radius: 50%;
-    animation:spinner8_1 1.4s infinite linear;
+    animation: spinner8_1 1.4s infinite linear;
     span{
-      animation:spinner8_loading_text 1.4s infinite linear;
+      animation: spinner8_loading_text 1.4s infinite linear;
     }
   }
 }
