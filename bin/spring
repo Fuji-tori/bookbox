@@ -14,4 +14,5 @@ unless defined?(Spring)
     gem 'spring', spring.version
     require 'spring/binstub'
   end
+
 end
