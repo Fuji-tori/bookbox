@@ -3,6 +3,7 @@
 .user-new__form
   .user-new__form--title
     %h2 新規アカウントの作成
+
   .user-new__form--for
     = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
       = render "devise/shared/error_messages", resource: resource
@@ -35,9 +36,11 @@
           = f.label :パスワード確認, class: "bold"
         %br/
         = f.password_field :password_confirmation, autocomplete: "new-password"
+
       .actions
         = f.submit "アカウント作成"
     %br/
+
     = render "devise/shared/links"
     %br/
 
