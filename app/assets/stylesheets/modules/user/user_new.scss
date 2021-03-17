@@ -40,6 +40,7 @@
       margin-top: 60px;
     }
   }
+
 }
 
 
@@ -79,9 +80,9 @@ a {
 
 .require {
   margin-left: 8px;
-  color: $text-white;
   background-color: #f10000;
   padding: 2px 4px;
+  color: $text-white;
   font-size: 15px;
   vertical-align: top;
   border-radius: 2px;
@@ -89,9 +90,9 @@ a {
 
 .any {
   margin-left: 8px;
-  color: $text-white;
   background-color: lightgray;
   padding: 2px 4px;
+  color: $text-white;
   font-size: 15px;
   vertical-align: top;
   border-radius: 2px;
@@ -99,7 +100,7 @@ a {
 
 #link-signin {
   text-align: center;
-  margin-top: 20px;
+  margin-top:     20px;
   padding-bottom: 30px;
   a {
     font-size: 18px;
@@ -117,7 +118,7 @@ a {
 }
 
 #link-forgetpassword {
-  margin-top: 25px;
+  margin-top:     25px;
   padding-bottom: 30px;
   a {
     display: block;

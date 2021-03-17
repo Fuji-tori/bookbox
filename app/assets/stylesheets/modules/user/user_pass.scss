@@ -4,6 +4,7 @@
   margin: 0 auto;
   border: 2px solid $form-border;
   border-radius: 4px;
+
   .pass-form {
     color: $text-black;
     font-size: 25px;
@@ -11,10 +12,12 @@
     text-align: center;
     border-bottom: solid 1px $thin-border;
   }
+
   .pass-item {
   margin: 30px;
     input[type="email"] {
       margin-bottom: 15px;
     }
   }
+
 }
