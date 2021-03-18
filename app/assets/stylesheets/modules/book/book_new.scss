@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.book-new__contents{
+.book-new__contents {
   background: $back-white;
   height: 100%;
   width:  100%;
@@ -20,7 +20,7 @@
   width:   80%;
   margin: 0 auto;
   background-color: $detail-back;
-  .book-newpost{
+  .book-newpost {
     padding: 20px;
     margin-bottom: 20px;
     border-bottom: solid 1px #e2e2e2;
@@ -65,7 +65,7 @@
     }   
   }
 
-  .listing-book-detail__genre{
+  .listing-book-detail__genre {
     margin-bottom: 20px;
     border-radius: 4px;
     .listing-select-wrapper {
@@ -93,7 +93,7 @@
     &__label {
       margin-top: 20px;
     }
-    .label-content{
+    .label-content {
       margin-bottom: 10px;
       border: 1px solid $input-border;
       border-radius: 4px;

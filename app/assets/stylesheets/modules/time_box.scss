@@ -1,4 +1,4 @@
-.time-box{
+.time-box {
   position: fixed;
   top:  0;
   left: 0;
@@ -11,7 +11,7 @@
   background-color: #ffe9da; 
 }
 
-.spinner{
+.spinner {
   position: absolute;
   top:  50%;
   left: 50%;
@@ -20,7 +20,7 @@
   width:  120px;
   height: 120px;
   
-  span{
+  span {
     position: absolute;
     top:  50%;
     left: 50%;
@@ -28,77 +28,78 @@
     font-size: 12px;
   }
 
-  &.type8{
+  &.type8 {
     width:  20px;
     height: 20px;
     border-radius: 50%;
     animation: spinner8_1 1.4s infinite linear;
-    span{
+    span {
       animation: spinner8_loading_text 1.4s infinite linear;
     }
   }
+
 }
 
 @keyframes spinner8_1{
   0%,
   95%,
-  100%{
+  100% {
     box-shadow: -28px -28px transparent, 0 -28px transparent, 28px -28px transparent, -28px 0 transparent, 28px 0 transparent, -28px 28px transparent, 0 28px transparent, 28px 28px transparent;
   }
-  5%{
+  5% {
     box-shadow: -28px -28px, 0 -28px transparent, 28px -28px transparent, -28px 0 transparent, 28px 0 transparent, -28px 28px transparent, 0 28px transparent, 28px 28px transparent;
   }
-  10%{
+  10% {
     box-shadow: -28px -28px, 0 -28px, 28px -28px transparent, -28px 0 transparent, 28px 0 transparent, -28px 28px transparent, 0 28px transparent, 28px 28px transparent;
   }
-  15%{
+  15% {
     box-shadow: -28px -28px, 0 -28px, 28px -28px, -28px 0 transparent, 28px 0 transparent, -28px 28px transparent, 0 28px transparent, 28px 28px transparent;
   }
-  20%{
+  20% {
     box-shadow: -28px -28px, 0 -28px, 28px -28px, -28px 0, 28px 0 transparent, -28px 28px transparent, 0 28px transparent, 28px 28px transparent;
     background-color: transparent;
   }
-  25%{
+  25% {
     box-shadow: -28px -28px, 0 -28px, 28px -28px, -28px 0, 28px 0 transparent, -28px 28px transparent, 0 28px transparent, 28px 28px transparent;
     background-color: $back-white;
   }
-  30%{
+  30% {
     box-shadow: -28px -28px, 0 -28px, 28px -28px, -28px 0, 28px 0, -28px 28px transparent, 0 28px transparent, 28px 28px transparent;
   }
-  35%{
+  35% {
     box-shadow: -28px -28px, 0 -28px, 28px -28px, -28px 0, 28px 0, -28px 28px, 0 28px transparent, 28px 28px transparent;
   }
-  40%{
+  40% {
     box-shadow: -28px -28px, 0 -28px, 28px -28px, -28px 0, 28px 0, -28px 28px, 0 28px, 28px 28px transparent;
   }
   45%,
-  50%{
+  50% {
     box-shadow: -28px -28px, 0 -28px, 28px -28px, -28px 0, 28px 0, -28px 28px, 0 28px, 28px 28px;
   }
-  55%{
+  55% {
     box-shadow: -28px -28px transparent, 0 -28px, 28px -28px, -28px 0, 28px 0, -28px 28px, 0 28px, 28px 28px;
   }
-  60%{
+  60% {
     box-shadow: -28px -28px transparent, 0 -28px transparent, 28px -28px, -28px 0, 28px 0, -28px 28px, 0 28px, 28px 28px;
   }
   65%{
     box-shadow: -28px -28px transparent, 0 -28px transparent, 28px -28px transparent, -28px 0, 28px 0, -28px 28px, 0 28px, 28px 28px;
   }
-  70%{
+  70% {
     box-shadow: -28px -28px transparent, 0 -28px transparent, 28px -28px transparent, -28px 0 transparent, 28px 0, -28px 28px, 0 28px, 28px 28px;
     background-color: $back-white;
   }
-  75%{
+  75% {
     box-shadow: -28px -28px transparent, 0 -28px transparent, 28px -28px transparent, -28px 0 transparent, 28px 0, -28px 28px, 0 28px, 28px 28px;
     background-color: transparent;
   }
-  80%{
+  80% {
     box-shadow: -28px -28px transparent, 0 -28px transparent, 28px -28px transparent, -28px 0 transparent, 28px 0 transparent, -28px 28px, 0 28px, 28px 28px;
   }
-  85%{
+  85% {
     box-shadow: -28px -28px transparent, 0 -28px transparent, 28px -28px transparent, -28px 0 transparent, 28px 0 transparent, -28px 28px transparent, 0 28px, 28px 28px;
   }
-  90%{
+  90% {
     box-shadow: -28px -28px transparent, 0 -28px transparent, 28px -28px transparent, -28px 0 transparent, 28px 0 transparent, -28px 28px transparent, 0 28px transparent, 28px 28px;
   }
 }
@@ -114,7 +115,7 @@
     transform: translate(-50%, calc(-50% - 32px));
     opacity: 0;
   }
-  100%{
+  100% {
     transform: translate(-50%, -50%);
     opacity: 1;
   }
