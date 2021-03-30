@@ -166,19 +166,20 @@ $footer-pink:    #eeb688;
 $line-yellow:    #cecb1b;
 $line-green:     #7bc406;
 
-/* sass-normalの設定は上に記載
-$normal-black: #000;
-$normal-white: #fff;
+/* sass-normal
+$normal-black: #000; ↑<13
+$normal-white: #fff; ↑<14
 */
 
 /*one-colors,cssFile
-  header     #e3e3e3,#ff934b
-  book_show  #a8a8a8,#7c7c7c,#ffeee0
-  book_index #ffdcc0
-  book_new   #e2e2e2
-  user_new   #f10000,lightgray,#e85d00
-  user_show  #d6d6d6,#808080,#fffaf7,#fffcfa,#cecece
-  comment    #ffa87f,#636363
-  time_box   #ffe9da
-  wave_box   #f0f4c3,#aaff00,#ffb700,#ffe0c8
+  book_index #ffdcc0<104
+  book_new   #e2e2e2<26
+  book_show  #a8a8a8<17,#7c7c7c<39,#ffeee0<66
+  user_new   #f10000<83,lightgray<93,#e85d00<126
+  user_show  #d6d6d6<20,#808080<36,#fffaf7<54,
+             #fffcfa<81,#cecece<84
+  comment    #ffa87f<4,#636363<125
+  header     #e3e3e3<9,#ff934b<59
+  time_box   #ffe9da<11
+  wave_box   #f0f4c3<4,#aaff00<15,#ffb700<32,#ffe0c8<91
 */
