@@ -5,10 +5,12 @@ Rails.application.routes.draw do
   root to: 'books#index'
 
   resources :books do
+
     collection do
       get 'get_genre_children', defaults: { format: 'json' }
       get 'get_genre_grandchildren', defaults: { format: 'json' }
     end
+
     get :search, on: :collection
     resources :comments, only: :create
   end
