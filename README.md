@@ -43,7 +43,7 @@
 - has_many :books
 
 
-## bookmarksテーブル
+## book_marksテーブル
 |Column|Type      |Options    |
 |------|----------|-----------|
 |user  |references|foreign_key: true, null: false|
