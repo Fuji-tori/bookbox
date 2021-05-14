@@ -22,5 +22,6 @@
     } else {
       Cookies.set("product_names", book);
     }
+    
   });
 }.call(this));

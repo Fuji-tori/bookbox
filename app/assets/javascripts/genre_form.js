@@ -19,7 +19,6 @@ $(function(){
                       </div>`;
     $('.listing-book-detail__genre').append(childSelectHtml);
   }
-  
   // 孫カテゴリーの表示作成
   function appendGrandchidrenBox(insertHTML){
     var grandchildSelectHtml = '';
@@ -61,7 +60,6 @@ $(function(){
       $('#grandchildren_wrapper').remove();
     }
   });
-  
   // 子カテゴリー選択後のイベント
   $('.listing-book-detail__genre').on('change', '#child_genre', function(){
     var childId = document.getElementById('child_genre').value; //選択された子カテゴリーのidを取得
@@ -89,4 +87,5 @@ $(function(){
       $('#grandchildren_wrapper').remove(); //子カテゴリーが初期値になった時、孫以下を削除する
     }
   });
+
 });
