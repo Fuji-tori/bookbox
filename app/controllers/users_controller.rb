@@ -16,6 +16,6 @@ class UsersController < ApplicationController
       @user.image_name = "#{@user.id}.jpg"
       image = params[:image]
       File.binwrite("public/user_images/#{@user.image_avatar}",image.read)
-    end
+  end
 
 end
