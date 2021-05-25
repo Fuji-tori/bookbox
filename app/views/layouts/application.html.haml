@@ -14,9 +14,10 @@
     #my-spinner.time-box
       .spinner.type8
         %span Loading...
-
+    
     .header
       .header__inner
+        
         .main-header
           %h1.icon.bold 
             = link_to root_path do
@@ -27,7 +28,7 @@
               %button{type: "submit",class: "submit-btn", value: "Send"}
                 .search-button
                   = image_tag('search.png', class: "search-button__image")
-
+        
         .nav
           %ul.list-left 
             %li.list-left__first 
