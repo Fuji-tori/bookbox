@@ -2,7 +2,7 @@
 APP_ROOT = File.expand_path('..', __dir__)
 
 Dir.chdir(APP_ROOT) do
-
+  
   begin
     exec "yarnpkg", *ARGV
   rescue Errno::ENOENT
@@ -10,5 +10,5 @@ Dir.chdir(APP_ROOT) do
     $stderr.puts "Download Yarn at https://yarnpkg.com/en/docs/install"
     exit 1
   end
-
+  
 end
