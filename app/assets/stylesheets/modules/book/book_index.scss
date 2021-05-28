@@ -31,7 +31,7 @@
       .top-handling__sub {
         color: $text-black;
         margin: 38px 0 10px;
-        font-size: 19px;
+        font-size:   19px;
         font-weight: bold;
       }
     }
@@ -82,6 +82,7 @@ a {
   .post-btn:hover {
     transform: translateY(-0.1875em);
   }
+  
 }
 
 .footer-line {
@@ -96,6 +97,7 @@ footer {
   height: 100px;
   width:  100%;
   color: $header-text;
+  
   .footer-item {
     position: absolute;
     top:  50%;
@@ -111,4 +113,5 @@ footer {
   .footer-item :hover {
     opacity: 0.6;
   }
+
 }
