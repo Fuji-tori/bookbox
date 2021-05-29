@@ -50,6 +50,7 @@
         background-color: $item-back;
       }
     }
+
     .post-right {
       height: 25px;
       width: 160px;
@@ -58,7 +59,7 @@
       line-height: 25px;
       background-color: $detail-back;
     }
-
+    
     .post-right__long {
       border: 1px solid $thin-border;
       background-color: $detail-back;
@@ -71,7 +72,7 @@
         color: $text-black;
       }
     }
-
+    
     .content-user {
       text-align: center;
       padding-bottom: 10px;

@@ -15,6 +15,7 @@
       flex-direction: column;
       text-align: center;
       padding: 0 10px;
+
       .top-handling__iamge {
         width: 175px;
         background:    -moz-linear-gradient(      top, $back-white, $image-back);
@@ -28,12 +29,14 @@
           border-radius: 10px;
         }
       }
+
       .top-handling__sub {
         color: $text-black;
         margin: 38px 0 10px;
         font-size:   19px;
         font-weight: bold;
       }
+
     }
   }
 }
@@ -65,6 +68,7 @@ a {
     right:  32px;
     position: fixed;
     padding: 15px;
+
     .post-btn__text{
       color: $text-white;
       display: block;
@@ -72,17 +76,19 @@ a {
       text-shadow: 0 5px 0 rgba(0, 0, 0, 0.1);
       margin-bottom: 5px;
     }
+
     .post-btn__icon {
       .post-btn__image {
         width: 60%;
         mix-blend-mode: screen;
       }
     }
+    
   }
   .post-btn:hover {
     transform: translateY(-0.1875em);
   }
-  
+
 }
 
 .footer-line {
