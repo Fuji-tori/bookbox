@@ -50,6 +50,7 @@
               height: 36px;
               padding: 0 0 0 5px;
             }
+
             .submit-btn {
               width: 36px;
               border: 0;
@@ -70,10 +71,11 @@
             .submit-btn:hover {
               opacity: 0.6;
             }
+            
           }
         }
       }
-
+      
       .nav{
         font-size: 14px;
         display: flex;
@@ -81,6 +83,7 @@
         margin: 10px 0;
         .list-left {
           display: flex;
+          
           .list-left__first {
             margin-right: 30px;
             a{
@@ -91,7 +94,9 @@
           .list-left__first:hover {
             transform: translateY(-0.1875em);
           }
+        
         }
+
         .list-right{
           display: flex;
           &__login,
@@ -120,6 +125,7 @@
             transform: translateY(-0.1875em);
           }
         }
+        
       }
     }
   }
