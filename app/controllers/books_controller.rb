@@ -1,4 +1,5 @@
 class BooksController < ApplicationController
+
   before_action :set_book, except: [:index, :new, :create, :search, :get_genre_children, :get_genre_grandchildren]
 
   def index
@@ -46,6 +47,7 @@ class BooksController < ApplicationController
     #   @books = Book.none
     # end
   end
+
 
   private
 
