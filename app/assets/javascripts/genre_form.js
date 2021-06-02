@@ -6,7 +6,7 @@ $(function(){
     return html;
   }
 
-  // 子カテゴリーの表示作成
+  // 子_カテゴリーの表示作成
   function appendChidrenBox(insertHTML){
     var childSelectHtml = '';
     childSelectHtml = `<div class='listing-select-wrapper__added' id= 'children_wrapper'>
@@ -19,7 +19,7 @@ $(function(){
                       </div>`;
     $('.listing-book-detail__genre').append(childSelectHtml);
   }
-  // 孫カテゴリーの表示作成
+  // 孫_カテゴリーの表示作成
   function appendGrandchidrenBox(insertHTML){
     var grandchildSelectHtml = '';
     grandchildSelectHtml = `<div class='listing-select-wrapper__added' id= 'grandchildren_wrapper'>
@@ -33,10 +33,10 @@ $(function(){
     $('.listing-book-detail__genre').append(grandchildSelectHtml);
   }
 
-  // 親カテゴリー選択後のイベント
+  // 親_カテゴリー選択後のイベント
   $('#parent_genre').on('change', function(){
-    var parentGenre = document.getElementById('parent_genre').value; //選択された親カテゴリーの名前を取得
-    if (parentGenre != "選択してください"){ //親カテゴリーが初期値でないことを確認
+    var parentGenre = document.getElementById('parent_genre').value; //選択された親_カテゴリーの名前を取得
+    if (parentGenre != "選択してください"){ //親_カテゴリーが初期値でないことを確認
       $.ajax({
         url: '/books/get_genre_children',
         type: 'GET',
@@ -44,7 +44,7 @@ $(function(){
         dataType: 'json'
       })
       .done(function(children){
-        $('#children_wrapper').remove(); //親が変更された時、子以下を削除する
+        $('#children_wrapper').remove(); //親_が変更された時、子_以下を削除する
         $('#grandchildren_wrapper').remove();
         var insertHTML = '';
         children.forEach(function(child){
@@ -56,14 +56,14 @@ $(function(){
         alert('カテゴリー取得に失敗しました');
       })
     }else{
-      $('#children_wrapper').remove(); //親カテゴリーが初期値になった時、子以下を削除する
+      $('#children_wrapper').remove(); //親_カテゴリーが初期値になった時、子_以下を削除する
       $('#grandchildren_wrapper').remove();
     }
   });
-  // 子カテゴリー選択後のイベント
+  // 子_カテゴリー選択後のイベント
   $('.listing-book-detail__genre').on('change', '#child_genre', function(){
-    var childId = document.getElementById('child_genre').value; //選択された子カテゴリーのidを取得
-    if (childId != "---"){ //子カテゴリーが初期値でないことを確認
+    var childId = document.getElementById('child_genre').value; //選択された子_カテゴリーのidを取得
+    if (childId != "---"){ //子_カテゴリーが初期値でないことを確認
       $.ajax({
         url: '/books/get_genre_grandchildren',
         type: 'GET',
@@ -72,7 +72,7 @@ $(function(){
       })
       .done(function(grandchildren){
         if (grandchildren.length != 0) {
-          $('#grandchildren_wrapper').remove(); //子が変更された時、孫以下を削除する
+          $('#grandchildren_wrapper').remove(); //子_が変更された時、孫_以下を削除する
           var insertHTML = '';
           grandchildren.forEach(function(grandchild){
             insertHTML += appendOption(grandchild);
@@ -84,7 +84,7 @@ $(function(){
         alert('カテゴリー取得に失敗しました');
       })
     }else{
-      $('#grandchildren_wrapper').remove(); //子カテゴリーが初期値になった時、孫以下を削除する
+      $('#grandchildren_wrapper').remove(); //子_カテゴリーが初期値になった時、孫_以下を削除する
     }
   });
 
