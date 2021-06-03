@@ -15,7 +15,7 @@
       flex-direction: column;
       text-align: center;
       padding: 0 10px;
-
+      
       .top-handling__iamge {
         width: 175px;
         background:    -moz-linear-gradient(      top, $back-white, $image-back);
@@ -29,7 +29,7 @@
           border-radius: 10px;
         }
       }
-
+      
       .top-handling__sub {
         color: $text-black;
         margin: 38px 0 10px;
@@ -83,7 +83,7 @@ a {
         mix-blend-mode: screen;
       }
     }
-    
+
   }
   .post-btn:hover {
     transform: translateY(-0.1875em);
