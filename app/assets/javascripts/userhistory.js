@@ -3,7 +3,7 @@
     let book = "",
       books = "",
       split = [];
-    
+      
     // Product.nameで商品名称を取得
     book = "#{{@product.name}}";
     
