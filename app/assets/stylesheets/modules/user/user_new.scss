@@ -11,6 +11,7 @@
   margin: 0 auto;
   border: 2px solid $form-border;
   border-radius: 4px;
+  
   &--title {
     height: 100px;
     border-bottom: solid 1px $thin-border;
@@ -21,10 +22,10 @@
       line-height: 100px;
     }
   }
+  
   &--for {
     width: 350px;
     padding: 30px;
-    
     .nickname-field,
     .email-field,
     .password-field,
@@ -39,8 +40,8 @@
     .actions {
       margin-top: 60px;
     }
-    
   }
+
 }
 
 
