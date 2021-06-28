@@ -27,7 +27,7 @@
     transform: translate(-50%, -50%);
     font-size: 12px;
   }
-
+  
   &.type8 {
     width:  20px;
     height: 20px;
@@ -37,7 +37,7 @@
       animation: spinner8_loading_text 1.4s infinite linear;
     }
   }
-
+  
 }
 
 @keyframes spinner8_1{
