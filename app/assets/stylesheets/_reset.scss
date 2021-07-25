@@ -138,6 +138,10 @@ legend {
 #yui3-css-stamp.cssreset { display: none; }
 
 /* sass */
+/* sass-normal
+$normal-black: #000; ↑<13
+$normal-white: #fff; ↑<14
+*/
 /* border ---------- */
 $thick-border:   #ffecde; /* bookpost */
 $thin-border:    #fff0e5; /* book_show,bookpost,user_login,user_new,user_pass,user_show */
@@ -167,11 +171,6 @@ $footer-pink:    #eeb688; /* book_index,user_new,header */
 $line-yellow:    #cecb1b;
 $line-green:     #7bc406;
 
-
-/* sass-normal
-$normal-black: #000; ↑<13
-$normal-white: #fff; ↑<14
-*/
 
 /*one-colors,cssFile
   book_index [#ffdcc0<104]
