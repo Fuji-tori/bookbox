@@ -5,7 +5,7 @@ $(function(){
     var html = `<option value="${genre.id}" data-genre="${genre.id}">${genre.name}</option>`;
     return html;
   }
-
+  //
   // 子_カテゴリーの表示作成
   function appendChidrenBox(insertHTML){
     var childSelectHtml = '';
@@ -32,7 +32,7 @@ $(function(){
                             </div>`;
     $('.listing-book-detail__genre').append(grandchildSelectHtml);
   }
-  
+  //
   // 親_カテゴリー選択後のイベント
   $('#parent_genre').on('change', function(){
     var parentGenre = document.getElementById('parent_genre').value; //選択された親_カテゴリーの名前を取得
