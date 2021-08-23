@@ -4,13 +4,13 @@
       books = "",
       split = [];
       
-    // Product.nameで商品名称を取得
+    // [Product.name]で商品名称を取得
     book = "#{{@product.name}}";
     
-    // Cookieからproduct_namesに関するデータを取得します。
+    // [Cookie]から[product_names]に関するデータを取得します。
     books = Cookies.get("product_names");
     
-    // undefinedでなければデータがproduct_nameに入っている。
+    // [undefined]でなければデータが[product_name]に入っている。
     if (books != undefined) {
       books = books + "," + book;
       split = books.split(",");
