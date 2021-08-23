@@ -36,7 +36,7 @@ $(function(){
   // [親]カテゴリー選択後のイベント
   $('#parent_genre').on('change', function(){
     var parentGenre = document.getElementById('parent_genre').value; //選択された[親]カテゴリーの名前を取得
-    if (parentGenre != "選択してください"){ //[親]カテゴリーが初期値でないことを確認
+    if (parentGenre != "選択してください"){ // [親]カテゴリーが初期値でないことを確認
       $.ajax({
         url: '/books/get_genre_children',
         type: 'GET',
@@ -44,7 +44,7 @@ $(function(){
         dataType: 'json'
       })
       .done(function(children){
-        $('#children_wrapper').remove(); //[親]が変更された時、[子]以下を削除する
+        $('#children_wrapper').remove(); // [親]が変更された時、[子]以下を削除する
         $('#grandchildren_wrapper').remove();
         var insertHTML = '';
         children.forEach(function(child){
@@ -56,14 +56,14 @@ $(function(){
         alert('カテゴリー取得に失敗しました');
       })
     }else{
-      $('#children_wrapper').remove(); //[親]カテゴリーが初期値になった時、[子]以下を削除する
+      $('#children_wrapper').remove(); // [親]カテゴリーが初期値になった時、[子]以下を削除する
       $('#grandchildren_wrapper').remove();
     }
   });
   // [子]カテゴリー選択後のイベント
   $('.listing-book-detail__genre').on('change', '#child_genre', function(){
-    var childId = document.getElementById('child_genre').value; //選択された[子]カテゴリーのidを取得
-    if (childId != "---"){ //[子]カテゴリーが初期値でないことを確認
+    var childId = document.getElementById('child_genre').value; // 選択された[子]カテゴリーのidを取得
+    if (childId != "---"){ // [子]カテゴリーが初期値でないことを確認
       $.ajax({
         url: '/books/get_genre_grandchildren',
         type: 'GET',
@@ -72,7 +72,7 @@ $(function(){
       })
       .done(function(grandchildren){
         if (grandchildren.length != 0) {
-          $('#grandchildren_wrapper').remove(); //[子]が変更された時、[孫]以下を削除する
+          $('#grandchildren_wrapper').remove(); // [子]が変更された時、[孫]以下を削除する
           var insertHTML = '';
           grandchildren.forEach(function(grandchild){
             insertHTML += appendOption(grandchild);
@@ -84,7 +84,7 @@ $(function(){
         alert('カテゴリー取得に失敗しました');
       })
     }else{
-      $('#grandchildren_wrapper').remove(); //[子]カテゴリーが初期値になった時、[孫]以下を削除する
+      $('#grandchildren_wrapper').remove(); // [子]カテゴリーが初期値になった時、[孫]以下を削除する
     }
   });
 
