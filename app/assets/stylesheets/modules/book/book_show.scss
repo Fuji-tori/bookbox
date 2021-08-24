@@ -68,8 +68,8 @@
     border-radius: 4px;
   }
 
-  .data-list,
-  .data-list__long {
+  .data-list {
+    height: 60px; //以下[data-list__long]に同じ
     width: 180px;
     padding-left: 10px;
     border: 1px solid $thin-border;
@@ -77,31 +77,35 @@
     background-color: $item-back;
     line-height: 60px;
   }
-  .data-list {
-    height: 60px;
-  }
   .data-list__long {
-    height: 200px;
+    height: 200px; //以下[data-list]に同じ
+    width:  180px;
+    padding-left: 10px;
+    border: 1px solid $thin-border;
+    color: $text-black;
+    background-color: $item-back;
+    line-height: 60px;
   }
 
-  .detail-list,
-  .detail-list__long {
+  .detail-list {
+    height: 60px;
+    padding-left: 10px;
+    line-height: 60px;
+    table-layout: fixed; //以下[detail-list__long]に同じ
     width: 460px;
     background-color: $back-white;
     border: 1px solid $thin-border;
     color: $text-black;
   }
-  .detail-list {
-    height: 60px;
-    padding-left: 10px;
-    line-height: 60px;
-    table-layout: fixed;
-  }
   .detail-list__long {
     height: 200px;
     padding: 10px;
     line-height: 23px;
-    overflow-wrap : break-word;
+    overflow-wrap : break-word; //以下[detail-list]に同じ
+    width: 460px;
+    background-color: $back-white;
+    border: 1px solid $thin-border;
+    color: $text-black;
   }
 
 }
