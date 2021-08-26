@@ -5,11 +5,11 @@
     border-radius: 10px;
     padding-bottom: 35px;
     margin: 10px;
-
+    
     .comment-send {
       display: flex;
       justify-content: center;
-
+      
       .comment-box {
         width: 550px;
         height: 40px;
@@ -24,7 +24,7 @@
         border: 2px solid $focus-border;
         outline: 0;
       }
-
+      
       .comment-submit {
         width: 100px;
         height: 40px;
@@ -52,7 +52,7 @@
       display: flex;
       justify-content: center;
       height: 37px;
-
+      
       &__login,
       &__new {
         margin-right: 50px;
@@ -69,7 +69,7 @@
         transform: translateY(-0.1875em);
       }
     }
-  
+    
   }
 
   .book-comment {
@@ -83,7 +83,7 @@
       border-bottom: 3px dotted $form-border;
       padding-bottom: 10px;
     }
-
+    
     &__area {
     width: calc(100% - 60px);
     margin:  0 auto;
@@ -91,12 +91,12 @@
     color: $text-black;
     font-size: 17px;
     margin-bottom: 20px;
-
+    
     .comment-user__box {
       margin: 10px 5px 10px;
       display: flex;
     }
-
+    
     .comment-user__image {
       background-color: $item-back;
       height: 45px;
@@ -108,7 +108,7 @@
         color: $text-gray;
       }
     }
-
+    
     .comment-user__small {
       padding: 2px;
       font-size: 12px;
@@ -116,7 +116,7 @@
       border: 1px solid $form-border;
       border-radius: 5px;
     }
-
+    
     .comment-user__text {
       color: $text-black;
       margin: 5px 0 0 10px;
@@ -124,13 +124,13 @@
       border-left:   3px double $form-border;
       border-bottom: 1px dotted $form-border;
     }
-
+    
       .no-comment {
         color: #636363;
         font-size: 17px;
       }
     }
-    
+
   }
 
 }
