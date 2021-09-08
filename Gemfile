@@ -65,14 +65,14 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 # +gem
-#
+
 gem 'haml-rails'
 gem 'font-awesome-sass'
-#
+
 gem 'devise'
 gem 'pry-rails'
 gem 'compass-rails', '3.1.0'
-#
+
 gem 'sprockets', '3.7.2'
 gem 'ancestry'
 # picture
