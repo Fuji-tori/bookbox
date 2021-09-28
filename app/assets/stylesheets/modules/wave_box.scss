@@ -7,6 +7,18 @@
   transform: translate3d(0, 0, 0);
 }
 
+.box:after {
+  content: '';
+  display: block;
+  left: 0;
+  top:  0;
+  width:  100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba($footer-pink, 1), rgba(#def, 0) 80%, rgba($back-white, .5));
+  z-index: 11;
+  transform: translate3d(0, 0, 0);
+}
+
 .wave {
   opacity: .4;
   position: absolute;
@@ -32,17 +44,6 @@
   background: #ffb700;
 }
 
-.box:after {
-  content: '';
-  display: block;
-  left: 0;
-  top:  0;
-  width:  100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba($footer-pink, 1), rgba(#def, 0) 80%, rgba($back-white, .5));
-  z-index: 11;
-  transform: translate3d(0, 0, 0);
-}
 
 .title {
   position: absolute;
