@@ -35,7 +35,7 @@ $(function(){
   //
   // [親]カテゴリー選択後のイベント
   $('#parent_genre').on('change', function(){
-    var parentGenre = document.getElementById('parent_genre').value; //選択された[親]カテゴリーの名前を取得
+    var parentGenre = document.getElementById('parent_genre').value; //選択された[親]カテゴリーの[名前]を取得
     if (parentGenre != "選択してください"){ // [親]カテゴリーが初期値でないことを確認
       $.ajax({
         url: '/books/get_genre_children',
@@ -62,7 +62,7 @@ $(function(){
   });
   // [子]カテゴリー選択後のイベント
   $('.listing-book-detail__genre').on('change', '#child_genre', function(){
-    var childId = document.getElementById('child_genre').value; // 選択された[子]カテゴリーのidを取得
+    var childId = document.getElementById('child_genre').value; // 選択された[子]カテゴリーの[id]を取得
     if (childId != "---"){ // [子]カテゴリーが初期値でないことを確認
       $.ajax({
         url: '/books/get_genre_grandchildren',
