@@ -4,7 +4,7 @@
       books = "",
       split = [];
       
-    // [Product.name]で商品名称を取得
+    // [Product.name]で[商品名称]を取得
     book = "#{{@product.name}}";
     
     // [Cookie]から[product_names]に関するデータを取得
