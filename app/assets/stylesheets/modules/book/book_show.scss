@@ -69,7 +69,8 @@
   }
 
   .data-list {
-    height: 60px; //以下[data-list__long]に同じ
+    height: 60px;
+    //以下[data-list__long]に同じ
     width: 180px;
     padding-left: 10px;
     border: 1px solid $thin-border;
@@ -78,7 +79,8 @@
     line-height: 60px;
   }
   .data-list__long {
-    height: 200px; //以下[data-list]に同じ
+    height: 200px;
+    //以下[data-list]に同じ
     width:  180px;
     padding-left: 10px;
     border: 1px solid $thin-border;
@@ -91,7 +93,8 @@
     height: 60px;
     padding-left: 10px;
     line-height: 60px;
-    table-layout: fixed; //以下[detail-list__long]に同じ
+    table-layout: fixed;
+    //以下[detail-list__long]に同じ
     width: 460px;
     background-color: $back-white;
     border: 1px solid $thin-border;
@@ -101,7 +104,8 @@
     height: 200px;
     padding: 10px;
     line-height: 23px;
-    overflow-wrap : break-word; //以下[detail-list]に同じ
+    overflow-wrap : break-word;
+    //以下[detail-list]に同じ
     width: 460px;
     background-color: $back-white;
     border: 1px solid $thin-border;
