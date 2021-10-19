@@ -11,9 +11,9 @@
     border-radius: 4px;
     
     &__image {
-      margin:  20px;
       height: 100px;
       width:  100px;
+      margin:  20px;
       border: 1px solid $input-border;
       border-radius: 4px;
       text-align: center;
@@ -24,8 +24,8 @@
     }
     
     &__name {
-      color: $text-black;
       left: 20px;
+      color: $text-black;
       font-size: 23px;
       padding-bottom: 10px;
       border-bottom: solid 1px $thin-border;
