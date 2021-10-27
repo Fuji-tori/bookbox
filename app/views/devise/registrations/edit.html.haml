@@ -33,12 +33,12 @@
   .field
     = f.label :password_confirmation
     %br/
-    = f.password_field :password_confirmation, autocomplete: "新しいパスワード"
+    = f.password_field :password_confirmation, autocomplete: "新規パスワード"
   .field
     = f.label :current_password
     %i (we need your current password to confirm your changes)
     %br/
-    = f.password_field :current_password, autocomplete: "再度、新しいパスワード"
+    = f.password_field :current_password, autocomplete: "再度、新規パスワード"
   .actions
     = f.submit "Update"
 
