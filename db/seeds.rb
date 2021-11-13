@@ -23,3 +23,5 @@ ebook_4 = ebook.children.create(name: "ライトノベル")
 ebook_4.children.create([{name: "ファンタジー"},{name: "恋愛"},{name: "異世界転生/転移"},{name: "文芸"},{name: "SF"},{name: "その他"}])
 ebook_5 = ebook.children.create(name: "子どもの本")
 ebook_5.children.create([{name: "絵本"},{name: "図鑑・辞典"},{name: "学習まんが"},{name: "攻略本"},{name: "知育"},{name: "小学館ジュニア文庫"}])
+
+# 本、電子書籍共に分類以外は同じ
