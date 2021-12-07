@@ -64,3 +64,5 @@
 ### Association
 - belongs_to :user
 - belongs_to :book
+
+<!-- 合計 テーブル:5 -->
