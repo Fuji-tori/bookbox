@@ -65,4 +65,10 @@
 - belongs_to :user
 - belongs_to :book
 
-<!-- 合計 テーブル:5 -->
+<!-- 合計 テーブル:5
+                users
+                books
+                book_genres
+                book_marks
+                comments
+-->
