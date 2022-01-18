@@ -69,6 +69,6 @@
                 users
                 books
                 book_genres
-                book_marks
+                book_marks -- Not in operation
                 comments
 -->
