@@ -6,7 +6,7 @@
 |nickname    |string|null: false|
 |email       |string|null: false, unique: true|
 |password    |string|null: false|
-|image_avatar|string||
+|image_avatar|string| |
 
 ### Association
 - has_many :books
@@ -37,7 +37,7 @@
 |--------|----------|-----------|
 |name    |string    |null: false, index: true|
 |book    |references|foreign_key: true|
-|ancestry|string    ||
+|ancestry|string    | |
 
 ### Association
 - has_many :books
