@@ -67,9 +67,9 @@
 
 
 <!-- 合計 テーブル:5
-                users
-                books
-                book_genres
-                book_marks -- Not in operation
-                comments
+  users.4
+  books.7
+  book_genres.3
+  book_marks -- Not in operation
+  comments.3
 -->
