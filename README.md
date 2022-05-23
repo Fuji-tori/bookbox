@@ -70,6 +70,6 @@
   users:4
   books:7
   book_genres:3
-  book_marks - Not in operation
+  book_marks:Not in operation
   comments:3
 -->
