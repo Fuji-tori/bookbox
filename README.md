@@ -66,10 +66,11 @@
 - belongs_to :book
 
 
-<!-- 合計 テーブル:5
-  users:4
-  books:7
-  book_genres:3
-  [book_marks:Not in operation]
-  comments:3
+<!--
+テーブル数:5
+詳細/users:4
+    books:7
+    book_genres:3
+    [book_marks:Not in operation]
+    comments:3
 -->
