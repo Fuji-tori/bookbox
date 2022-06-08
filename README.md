@@ -66,6 +66,7 @@
 - belongs_to :book
 
 
+
 <!--
 テーブル数:5
 詳細/users:4
