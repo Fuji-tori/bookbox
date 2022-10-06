@@ -71,9 +71,9 @@ gem 'pry-rails'
 gem 'compass-rails', '3.1.0'
 gem 'sprockets', '3.7.2'
 gem 'ancestry'
-  # picture
+# picture
 gem 'carrierwave'
 gem 'mini_magick'
-  # js
+# js
 gem 'jquery-rails'
 gem 'js_cookie_rails', '~> 2.2'
