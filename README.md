@@ -67,7 +67,7 @@
 
 
 <!--
-テーブル数:5
+table:5
 詳細/users:4
     books:7
     book_genres:3
