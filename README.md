@@ -65,7 +65,6 @@
 - belongs_to :user
 - belongs_to :book
 
-
 <!--
 table/5
   users:4
