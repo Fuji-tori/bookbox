@@ -32,7 +32,6 @@ $(function(){
                             </div>`;
     $('.listing-book-detail__genre').append(grandchildSelectHtml);
   }
-  //
   // [親]カテゴリー選択後のイベント
   $('#parent_genre').on('change', function(){
     var parentGenre = document.getElementById('parent_genre').value; //選択された[親]カテゴリーの[名前]を取得
