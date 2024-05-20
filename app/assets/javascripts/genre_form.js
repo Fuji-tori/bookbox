@@ -5,7 +5,6 @@ $(function(){
     var html = `<option value="${genre.id}" data-genre="${genre.id}">${genre.name}</option>`;
     return html;
   }
-  //
   // [子]カテゴリーの表示作成
   function appendChidrenBox(insertHTML){
     var childSelectHtml = '';
