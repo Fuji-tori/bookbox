@@ -6,10 +6,8 @@
       
     // [Product.name]で[商品名称]を取得
     book = "#{{@product.name}}";
-    
     // [Cookie]から[product_names]に関するデータを取得
     books = Cookies.get("product_names");
-    
     // [undefined]でなければデータが[product_name]に入っている
     if (books != undefined) {
       books = books + "," + book;
