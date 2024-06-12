@@ -6,10 +6,10 @@ class UsersController < ApplicationController
     @books = current_user.books
     # @recently_visit = cookies[:book_name].split(',') if cookies[:book_name]
   end
-
+  
   def edit
   end
-
+  
   def update
     @user = User.find_by(id: params[:id])
     if params[:image]
