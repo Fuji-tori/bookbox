@@ -8,7 +8,7 @@
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-
+    
   .body
     
     #my-spinner.time-box
@@ -47,6 +47,6 @@
               %li.list-right__new
                 = link_to new_user_registration_path do
                   新規会員登録
-
+    
     .contents
       = yield
