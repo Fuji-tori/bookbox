@@ -11,7 +11,7 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 2020_09_20_131958) do
-
+  
   create_table "book_genres", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
     t.string "ancestry"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2020_09_20_131958) do
     t.index ["ancestry"], name: "index_book_genres_on_ancestry"
     t.index ["name"], name: "index_book_genres_on_name"
   end
-
+  
   create_table "books", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "book_name", null: false
     t.string "author", null: false
@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 2020_09_20_131958) do
     t.index ["book_name"], name: "index_books_on_book_name"
     t.index ["user_id"], name: "index_books_on_user_id"
   end
-
+  
   create_table "comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "content"
     t.bigint "user_id"
@@ -48,7 +48,7 @@ ActiveRecord::Schema.define(version: 2020_09_20_131958) do
     t.index ["book_id"], name: "index_comments_on_book_id"
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
-
+  
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "nickname", null: false
     t.string "email", default: "", null: false
@@ -62,10 +62,10 @@ ActiveRecord::Schema.define(version: 2020_09_20_131958) do
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
-
+  
   add_foreign_key "books", "book_genres"
   add_foreign_key "books", "users"
   add_foreign_key "comments", "books"
   add_foreign_key "comments", "users"
-
+  
 end
