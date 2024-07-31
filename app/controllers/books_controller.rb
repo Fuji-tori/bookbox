@@ -1,7 +1,7 @@
 class BooksController < ApplicationController
-
+  
   before_action :set_book, except: [:index, :new, :create, :search, :get_genre_children, :get_genre_grandchildren]
-
+  
   def index
     @books = Book.all
   end
@@ -47,7 +47,7 @@ class BooksController < ApplicationController
     #   @books = Book.none
     # end
   end
-
+  
   private
   def book_params
     params.require(:book).permit(:book_name, :author, :publication, :price, :image, :synopsis, :review, :book_genre_id).merge(user_id: current_user.id)
@@ -56,5 +56,5 @@ class BooksController < ApplicationController
   def set_book
     @book = Book.find(params[:id])
   end
-
+  
 end
