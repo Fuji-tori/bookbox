@@ -3,7 +3,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-
+  
   # validates :nickname, presence: true
   # validates :password, presence: true, length: { minimum: 7},
   #               format: {
@@ -15,8 +15,8 @@ class User < ApplicationRecord
   #                 with: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i,
   #                 message: "は正しいメールアドレスを入力して下さい"
   #               }
-
+  
   has_many :books
   has_many :comments
-
+  
 end
