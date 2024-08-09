@@ -16,7 +16,6 @@
                 必須
             %br/
             = f.text_field :book_name, {include_blank: '100文字以内'}
-            
           .book-author
             .book-author__label.bold
               著者
@@ -24,7 +23,6 @@
                 必須
             %br/
             = f.text_field :author, {include_blank: '100文字以内'}
-            
           .book-publication
             .book-publication__label.bold
               出版
@@ -32,14 +30,12 @@
                 必須
             %br/
             = f.text_field :publication
-            
           .listing-book-detail__genre.bold
             = f.label 'ジャンル', class: 'listing-default__label'
             %span.require 必須
             .listing-select-wrapper
               .listing-select-wrapper__box
                 = f.select :book_genre_id, @book_genre.map {|n| [n.name,n.id]}, {include_blank: '選択してください'}, {class: 'listing-select-wrapper__box--select', id: 'parent_genre'}
-                
           .book-image
             .book-image__label.bold
               表紙
@@ -52,7 +48,6 @@
                   %i.far.fa-image
                     選択
                   = f.file_field :image
-                  
           .book-synopsis
             .book-synopsis__label.bold
               あらすじ
@@ -60,7 +55,6 @@
                 必須
             %br/
             = f.text_area :synopsis, class: "long-field", {include_blank: '10000文字以内'}
-            
           .book-review
             .book-review__label.bold
               感想
@@ -68,7 +62,6 @@
                 必須
             %br/
             = f.text_area :review, class: "long-field", {include_blank: '10000文字以内'}
-            
           .book-price
             .book-price__label.bold
               価格(税抜き)
