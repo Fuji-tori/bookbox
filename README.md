@@ -13,7 +13,6 @@
 - has_many :comments
 - has_many :bookmarks
 
-
 ## booksテーブル
 |Column     |Type  |Options    |
 |-----------|------|-----------|
@@ -31,7 +30,6 @@
 - belongs_to :user
 - belongs_to :book_genre
 
-
 ## book_genresテーブル
 |Column  |Type      |Options    |
 |--------|----------|-----------|
@@ -42,7 +40,6 @@
 ### Association
 - has_many :books
 
-
 ## book_marksテーブル
 |Column|Type      |Options    |
 |------|----------|-----------|
@@ -52,7 +49,6 @@
 ### Association
 - belongs_to :user
 - belongs_to :book
-
 
 ## commentsテーブル
 |Column|Type      |Options    |
