@@ -40,6 +40,7 @@
 ### Association
 - has_many :books
 
+<!-- 
 ## book_marksテーブル
 |Column|Type      |Options    |
 |------|----------|-----------|
@@ -48,7 +49,8 @@
 
 ### Association
 - belongs_to :user
-- belongs_to :book
+- belongs_to :book 
+-->
 
 ## commentsテーブル
 |Column|Type      |Options    |
