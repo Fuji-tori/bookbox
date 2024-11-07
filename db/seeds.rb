@@ -25,4 +25,4 @@ ebook_5 = ebook.children.create(name: "子どもの本")
 ebook_5.children.create([{name: "絵本"},{name: "図鑑・辞典"},{name: "学習まんが"},{name: "攻略本"},{name: "知育"},{name: "小学館ジュニア文庫"}])
 
 #
-# 本、電子書籍共に[BookGenre下]同文
+# 本、電子書籍[BookGenre下]同文
