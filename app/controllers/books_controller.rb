@@ -52,7 +52,6 @@ class BooksController < ApplicationController
   def book_params
     params.require(:book).permit(:book_name, :author, :publication, :price, :image, :synopsis, :review, :book_genre_id).merge(user_id: current_user.id)
   end
-  
   def set_book
     @book = Book.find(params[:id])
   end
