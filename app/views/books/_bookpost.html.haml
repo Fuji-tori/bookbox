@@ -2,7 +2,6 @@
   .content-post__box
     = link_to book_path(book.id) do
       .content-post{style: "background-image: url(#{book.image});"}
-      
       .content-post__list
         %ul.content-post__left
           %li.post-left.bold
@@ -29,7 +28,6 @@
             = book.author
           %li.post-right
             = book.publication
-        
       .content-user
         .content-user__name
           投稿者 :
