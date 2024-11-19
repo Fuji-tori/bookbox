@@ -3,7 +3,6 @@
 .user-new__form
   .user-new__form--title
     %h2 新規アカウントの作成
-    
   .user-new__form--for
     = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
       = render "devise/shared/error_messages", resource: resource
