@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(version: 2020_09_20_131958) do
     t.index ["ancestry"], name: "index_book_genres_on_ancestry"
     t.index ["name"], name: "index_book_genres_on_name"
   end
-  
   create_table "books", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "book_name", null: false
     t.string "author", null: false
@@ -37,7 +36,6 @@ ActiveRecord::Schema.define(version: 2020_09_20_131958) do
     t.index ["book_name"], name: "index_books_on_book_name"
     t.index ["user_id"], name: "index_books_on_user_id"
   end
-  
   create_table "comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "content"
     t.bigint "user_id"
@@ -48,7 +46,6 @@ ActiveRecord::Schema.define(version: 2020_09_20_131958) do
     t.index ["book_id"], name: "index_comments_on_book_id"
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
-  
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "nickname", null: false
     t.string "email", default: "", null: false
