@@ -64,7 +64,7 @@
 - belongs_to :book
 
 <!--
-table/5
+テーブル/5
   users:4
   books:7
   book_genres:3
