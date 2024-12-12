@@ -63,5 +63,4 @@ ActiveRecord::Schema.define(version: 2020_09_20_131958) do
   add_foreign_key "books", "users"
   add_foreign_key "comments", "books"
   add_foreign_key "comments", "users"
-  
 end
