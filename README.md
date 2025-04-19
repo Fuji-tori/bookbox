@@ -40,6 +40,17 @@
 ### Association
 - has_many :books
 
+## commentsテーブル
+|Column|Type      |Options    |
+|------|----------|-----------|
+|user  |references|foreign_key: true, null: false|
+|book  |references|foreign_key: true, null: false|
+|text  |text      |null: false|
+
+### Association
+- belongs_to :user
+- belongs_to :book
+
 <!-- 
 ## book_marksテーブル
 |Column|Type      |Options    |
@@ -52,22 +63,11 @@
 - belongs_to :book 
 -->
 
-## commentsテーブル
-|Column|Type      |Options    |
-|------|----------|-----------|
-|user  |references|foreign_key: true, null: false|
-|book  |references|foreign_key: true, null: false|
-|text  |text      |null: false|
-
-### Association
-- belongs_to :user
-- belongs_to :book
-
 <!--
 テーブル/5
   users:4
   books:7
   book_genres:3
-  [book_marks:0]
   comments:3
+  [book_marks:0]
 -->
