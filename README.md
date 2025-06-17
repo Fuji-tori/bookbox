@@ -63,6 +63,7 @@
 - belongs_to :book 
 -->
 
+
 <!--
 テーブル/5
   users:4
