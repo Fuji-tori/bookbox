@@ -51,7 +51,6 @@
 - belongs_to :user
 - belongs_to :book
 
-<!-- 
 ## book_marksテーブル
 |Column|Type      |Options    |
 |------|----------|-----------|
@@ -61,7 +60,6 @@
 ### Association
 - belongs_to :user
 - belongs_to :book 
--->
 
 
 <!--
