@@ -1,4 +1,4 @@
-# 本、電子書籍[BookGenre下]同文
+# [BookGenre下]同文
 # 本
 paperbook = BookGenre.create(name: "本")
 paperbook_1 = paperbook.children.create(name: "書籍")
