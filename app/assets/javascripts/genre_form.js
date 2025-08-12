@@ -42,7 +42,7 @@ $(function(){
         dataType: 'json'
       })
       .done(function(children){
-        $('#children_wrapper').remove(); //[親]が変更された時、[子]以下を削除
+        $('#children_wrapper').remove(); //[親]が変更された時[子]以下を削除
         $('#grandchildren_wrapper').remove();
         var insertHTML = '';
         children.forEach(function(child){
@@ -54,7 +54,7 @@ $(function(){
         alert('カテゴリー取得に失敗しました');
       })
     }else{
-      $('#children_wrapper').remove(); //[親]カテゴリーが初期値になった時、[子]以下を削除
+      $('#children_wrapper').remove(); //[親]カテゴリーが初期値になった時[子]以下を削除
       $('#grandchildren_wrapper').remove();
     }
   });
@@ -70,7 +70,7 @@ $(function(){
       })
       .done(function(grandchildren){
         if (grandchildren.length != 0) {
-          $('#grandchildren_wrapper').remove(); //[子]が変更された時、[孫]以下を削除
+          $('#grandchildren_wrapper').remove(); //[子]が変更された時[孫]以下を削除
           var insertHTML = '';
           grandchildren.forEach(function(grandchild){
             insertHTML += appendOption(grandchild);
@@ -82,7 +82,7 @@ $(function(){
         alert('カテゴリー取得に失敗しました');
       })
     }else{
-      $('#grandchildren_wrapper').remove(); //[子]カテゴリーが初期値になった時、[孫]以下を削除
+      $('#grandchildren_wrapper').remove(); //[子]カテゴリーが初期値になった時[孫]以下を削除
     }
   });
   
