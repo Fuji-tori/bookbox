@@ -1,6 +1,6 @@
 .blank-content
 
-%h2 パスワードを変更してください
+%h2 パスワード変更
 = form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f|
   = render "devise/shared/error_messages", resource: resource
   = f.hidden_field :reset_password_token
