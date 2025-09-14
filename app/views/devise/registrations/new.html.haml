@@ -29,12 +29,12 @@
           %span.require
             必須
         %br/
-        = f.password_field :password, autocomplete: "新規パスワード"
+        = f.password_field :password, autocomplete: "パスワード"
       .confimation-field
         .confimation-field__text
           = f.label :パスワード確認, class: "bold"
         %br/
-        = f.password_field :password_confirmation, autocomplete: "新規パスワード"
+        = f.password_field :password_confirmation, autocomplete: "パスワード"
       .actions
         = f.submit "アカウント作成"
     %br/
