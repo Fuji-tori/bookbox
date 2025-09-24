@@ -65,7 +65,7 @@
 
 <!--
 テーブル:5
-  /users:4
+  users:4
   books:7
   book_genres:3
   comments:3
