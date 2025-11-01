@@ -57,7 +57,6 @@ ActiveRecord::Schema.define(version: 2020_09_20_131958) do
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
-  
   add_foreign_key "books", "book_genres"
   add_foreign_key "books", "users"
   add_foreign_key "comments", "books"
