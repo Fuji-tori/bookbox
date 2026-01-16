@@ -70,7 +70,7 @@
 
   .data-list {
     height: 60px;
-    //以下[data-list__long]に同じ
+    //[data-list__long]に同じ
     width: 180px;
     padding-left: 10px;
     border: 1px solid $thin-border;
@@ -80,7 +80,7 @@
   }
   .data-list__long {
     height: 200px;
-    //以下[data-list]に同じ
+    //[data-list]に同じ
     width:  180px;
     padding-left: 10px;
     border: 1px solid $thin-border;
