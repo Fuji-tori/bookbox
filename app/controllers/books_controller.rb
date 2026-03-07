@@ -13,7 +13,6 @@ class BooksController < ApplicationController
   def get_genre_children
     @genre_children = BookGenre.find("#{params[:parent_name]}").children
   end
-  
   def get_genre_grandchildren
     @genre_grandchildren = BookGenre.find("#{params[:child_id]}").children
   end
