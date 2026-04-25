@@ -64,7 +64,7 @@
 -->
 
 <!--
-テーブル:5
+テーブル:5(4)
   users:4
   books:7
   book_genres:3
