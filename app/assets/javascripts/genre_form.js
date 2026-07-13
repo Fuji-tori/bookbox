@@ -1,6 +1,6 @@
 $(function(){
   let postId = null;
-  //カテゴリーセレクトボックスのオプションを作成
+  //[カテゴリーセレクトボックス]のオプションを作成
   function appendOption(genre){
     var html = `<option value="${genre.id}" data-genre="${genre.id}">${genre.name}</option>`;
     return html;
