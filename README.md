@@ -64,10 +64,11 @@
 -->
 
 <!--
-テーブル:4//1
+テーブル:4
+//1
   users:4
   books:7
   book_genres:3
   comments:3
-  //book_marks:2
+//book_marks:2
 -->
